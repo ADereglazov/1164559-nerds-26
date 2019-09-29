@@ -2,30 +2,50 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format("woff2");
+  src: local("Roboto"), local("Roboto-Regular"),
+       url("../fonts/roboto.woff2") format("woff2"),
+       url("../fonts/roboto.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2) format("woff2");
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+       url("../fonts/robotomedium.woff2") format("woff2"),
+       url("../fonts/robotomedium.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format("woff2");
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+       url("../fonts/robotobold.woff2") format("woff2"),
+       url("../fonts/robotobold.woff") format("woff");
 }
 
-.visually-hidden {
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  /*
+   font-size: ;
+   line-height: ;
+   color: ;
+   */
+  padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+  input[type="radio"].visually-hidden,
+  input[type="checkbox"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
