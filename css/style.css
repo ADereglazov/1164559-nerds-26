@@ -57,10 +57,17 @@ a { text-decoration: none }
   overflow: hidden;
 }
 
+.main-header {
+  background-color: #eeeeee;
+}
 .site-navigation,
 .cart-navigation,
 .propositions,
-.partners {
+.partners,
+.social-list,
+.sort-list,
+.catalog-list {
+  margin: 0;
   list-style: none;
 }
 
@@ -70,21 +77,13 @@ a { text-decoration: none }
 }
 
 .site-navigation a,
-.cart-navigation a {
-  color: #000000;
-}
+.cart-navigation a { color: #000000 }
 
 .site-navigation a:hover,
-.site-navigation a:focus,
-.cart-navigation a:hover,
-.cart-navigation a:focus {
-  color: #ff525b;
-}
+.cart-navigation a:hover { color: #ff525b }
 
 .site-navigation a:active,
-.cart-navigation a:active {
-  color: #bebebe;
-}
+.cart-navigation a:active { color: #bebebe }
 
 .current-link {
   pointer-events: none;
@@ -92,7 +91,136 @@ a { text-decoration: none }
   border-bottom: 2px solid #ff525b;
   padding-bottom: 5px;
 }
-  /* Временно отключен --- 12. Личный проект: начинаем базовую стилизацию --- */
+
+.propositions-head {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.order {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 40px; /* Размер от балды - исправить. Как сделать? */
+  color: #ffffff;
+  line-height: 18px;
+}
+
+.order-button1 { background-color: #fb565a }
+.order-button1:hover { background-color: #e74246 }
+.order-button1:active {
+  color: #e08685;
+  background-color: #d7363b;
+}
+
+.order-button2 { background-color: #00ca74 }
+.order-button2:hover { background-color: #01bc6d }
+.order-button2:active {
+  color: #78c39c;
+  background-color: #00aa63;
+}
+
+.order-button3 { background-color: #efc84a }
+.order-button3:hover { background-color: #eab535 }
+.order-button3:active {
+  color: #ebc67f;
+  background-color: #e6a823;
+}
+
+.invite {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.discount {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+}
+
+.social-link {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  /* Размеры/отступы ???*/
+  float: left;
+  text-align: center;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
+.social-link:hover { background-color: #e74246 }
+.social-link:active { background-color: #d7363b }
+.social-link:active img { opacity: 0.5 }
+
+.page-title {
+  font-size: 55px;
+  text-align: center;
+  line-height: 55px;
+  padding: 100px 0;
+  margin: 0;
+  background-color: #eeeeee;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend, .sort-label {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filters label {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.show-button {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 40px; /* Размер от балды - исправить. Как сделать? */
+  color: #000000;
+  line-height: 18px;
+}
+.show-button:hover { background-color: #dfdfdf }
+.show-button:active { opacity: 0.5;  background-color: #d5d5d5 }
+
+.catalog-popup {
+  width: 360px;
+  text-align: center;
+  padding: 20px 0; /* Уточнить */
+  background-color: #eeeeee;
+}
+
+.catalog-popup a {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-popup a:hover { color: #ff525b } /* Стоит ли объединить с такими же свойствами для главного меню ???*/
+.catalog-popup a:active { color: #bebebe } /* Стоит ли объединить с такими же свойствами для главного меню ???*/
+
+.catalog-popup p {
+  line-height: 18px;
+  color: #666666;
+}
+
+.catalog-popup span {
+  text-transform: uppercase;
+  padding: 10px 60px; /* Размер от балды - исправить. Как сделать? */
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+/* POPUP Временно отключен --- 12. Личный проект: начинаем базовую стилизацию --- */
 #writeus {
   display: none;
 }

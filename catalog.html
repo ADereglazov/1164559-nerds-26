@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+  <header class="main-header">
     <nav class="main-navigation">
       <a  class="header-logo" href="index.html"><img src="img/nerds-logo.svg" alt="Логотип Nerds" width="160" height="65"></a>
       <ul class="site-navigation">
@@ -24,10 +24,10 @@
     </nav>
   </header>
   <main>
-    <h1>Магазин готовых шаблонов</h1>
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
     <section>
       <h2 class="visually-hidden">Фильтр выбора шаблонов</h2>
-      <form action="https://echo.htmlacademy.ru" method="get">
+      <form class="filters" action="https://echo.htmlacademy.ru" method="get">
 
         <fieldset>
           <legend>Стоимость:</legend>
@@ -61,13 +61,13 @@
             <label for="basket-field">Корзина</label>
         </fieldset>
 
-        <button type="submit">Показать</button>
+        <button type="submit" class="show-button">Показать</button>
       </form>
     </section>
     <div>
       <section>
-        <h2>Сортировать:</h2>
-        <ul>
+        <h2 class="sort-label">Сортировать:</h2>
+        <ul class="sort-list">
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По названию</a></li>
@@ -78,10 +78,9 @@
 
       <section>
         <h2 class="visually-hidden">Список шаблонов</h2>
-        <ul>
-          <li>
-            <img src="img/img-sedona.jpg" alt="Шаблон «Sedona»" width="360" height="576">
-            <div>
+        <ul class="catalog-list">
+          <li><img src="img/img-sedona.jpg" alt="Шаблон «Sedona»" width="360" height="576">
+            <div class="catalog-popup">
               <a href="#"><h3>Sedona</h3></a>
               <p>Информационный сайт<br>
                 для туристов
@@ -90,7 +89,7 @@
             </div>
           </li>
           <li><img src="img/img-pink.jpg" alt="Шаблон «Pink»" width="360" height="576">
-            <div>
+            <div class="catalog-popup">
               <a href="#"><h3>Pink App</h3></a>
               <p>Продуктовый лендинг<br>
                 приложения для iOS и Android
@@ -99,7 +98,7 @@
             </div>
           </li>
           <li><img src="img/img-barbershop.jpg" alt="Шаблон «Бородинский»" width="360" height="576">
-            <div>
+            <div class="catalog-popup">
               <a href="#"><h3>Barbershop</h3></a>
               <p>Сайт салона красоты.<br>
                 Для мужчин, да.
@@ -108,7 +107,7 @@
             </div>
           </li>
           <li><img src="img/img-mishka.jpg" alt="Шаблон «Mishka»" width="360" height="576">
-            <div>
+            <div class="catalog-popup">
               <a href="#"><h3>MISHKA</h3></a>
               <p>Интернет-магазин<br>
                 вязаных игрушек
@@ -117,7 +116,7 @@
             </div>
           </li>
           <li><img src="img/img-aplus.jpg" alt="Шаблон «A+»" width="360" height="576">
-            <div>
+            <div class="catalog-popup">
               <a href="#"><h3>A PLUS</h3></a>
               <p>Лендинг курсов повышения<br>
                 квалификации
@@ -126,7 +125,7 @@
             </div>
           </li>
           <li><img src="img/img-kvast.jpg" alt="Шаблон «Кваст»" width="360" height="576">
-            <div>
+            <div class="catalog-popup">
               <a href="#"><h3>КВАСТ</h3></a>
               <p>Промо-сайт производителя<br>
                 крафтового кваса
@@ -177,14 +176,14 @@
     </div>
   </main>
   <footer>
-    <ul>
-      <li><a href="#"><img src="img/vk-icon.svg" alt="Вконтакте"></a></li>
-      <li><a href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
-      <li><a href="#"><img src="img/insta-icon.svg" alt="Инстаграм"></a></li>
+    <ul class="social-list">
+      <li><a class="social-link" href="#"><img src="img/vk-icon.svg" alt="Вконтакте"></a></li>
+      <li><a class="social-link" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
+      <li><a class="social-link" href="#"><img src="img/insta-icon.svg" alt="Инстаграм"></a></li>
     </ul>
-    <p>
+    <p class="invite">
       Давайте дружить, это выгодно!<br>
-      <span>Скидка 10% для друзей из социальных сетей.</span>
+      <span class="discount">Скидка 10% для друзей из социальных сетей.</span>
     </p>
   </footer>
 </body>
