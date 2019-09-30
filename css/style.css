@@ -25,15 +25,22 @@
        url("../fonts/robotobold.woff") format("woff");
 }
 
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
 body {
   font-family: "Roboto", "Arial", sans-serif;
-  /*
-   font-size: ;
-   line-height: ;
-   color: ;
-   */
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
   padding: 0;
+  color: #283136;
+  background-color: #ffffff;
 }
+
+img { max-width: 100% }
+
+a { text-decoration: none }
 
 .visually-hidden:not(:focus):not(:active),
   input[type="radio"].visually-hidden,
@@ -49,7 +56,43 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* Временно отключен --- 12. Личный проект: начинаем базовую стилизацию --- */
-#contacts {
+
+.site-navigation,
+.cart-navigation,
+.propositions,
+.partners {
+  list-style: none;
+}
+
+.main-navigation {
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.site-navigation a,
+.cart-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.cart-navigation a:hover,
+.cart-navigation a:focus {
+  color: #ff525b;
+}
+
+.site-navigation a:active,
+.cart-navigation a:active {
+  color: #bebebe;
+}
+
+.current-link {
+  pointer-events: none;
+  cursor: default;
+  border-bottom: 2px solid #ff525b;
+  padding-bottom: 5px;
+}
+  /* Временно отключен --- 12. Личный проект: начинаем базовую стилизацию --- */
+#writeus {
   display: none;
 }

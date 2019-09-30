@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <nav>
-      <a href="index.html"><img src="img/nerds-logo.svg"  width="160" height="65" alt="Логотип Nerds"></a>
-      <ul>
-        <li><a href="#">Студия</a></li>
+    <nav class="main-navigation">
+      <a  class="header-logo" href="index.html"><img src="img/nerds-logo.svg" alt="Логотип Nerds" width="160" height="65"></a>
+      <ul class="site-navigation">
+        <li><a href="index.html">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li><a>Магазин</a></li> <!--Сделать ТЕКУЩАЯ ССЫЛКА-->
-        <li><a href="#contacts">Контакты</a></li>
+        <li><a class="current-link">Магазин</a></li>
+        <li><a href="#">Контакты</a></li> <!-- ссылка на POPUP Нпишите нам -->
       </ul>
-      <ul>
+      <ul class="cart-navigation">
         <li>
-          <a href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
+          <a class="cart-link" href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
         </li>
       </ul>
     </nav>
@@ -154,7 +154,7 @@
       <a href="mailto:nowhere@mozilla.org">Напишите нам</a>
     </section>
     <!-- -----------------  START POPUP  ---------------------- -->
-    <section id="contacts">
+    <section>
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <button type="button"><img src="img/close-cross.svg" alt="Закрыть"></button>

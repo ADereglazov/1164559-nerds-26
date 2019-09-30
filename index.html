@@ -8,17 +8,17 @@
 </head>
 <body>
   <header>
-    <nav>
-      <a href="index.html"><img src="img/nerds-logo.svg" alt="Логотип Nerds" width="160" height="65"></a>
-      <ul>
+    <nav class="main-navigation">
+      <a  class="header-logo" href="index.html"><img src="img/nerds-logo.svg" alt="Логотип Nerds" width="160" height="65"></a>
+      <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#contacts">Контакты</a></li>
+        <li><a href="#">Контакты</a></li> <!-- ссылка на POPUP Нпишите нам -->
       </ul>
-      <ul>
+      <ul class="cart-navigation">
         <li>
-          <a href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
+          <a class="cart-link" href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
         </li>
       </ul>
     </nav>
@@ -47,7 +47,7 @@
     </section>
     <section>
       <h2 class="visually-hidden">Предложения</h2>
-      <ul>
+      <ul class="propositions">
         <li>
           <h3>Веб-сайты</h3>
           <img src="img/illustration-1.png" alt="Веб-сайты" width="300" height="146">
@@ -98,7 +98,7 @@
       </table>
     </section>
     <section>
-      <ul>
+      <ul class="partners">
         <li>
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-1.png" alt="Логотип html academy">
@@ -132,7 +132,7 @@
       <a href="mailto:nowhere@mozilla.org">Напишите нам</a>
     </section>
     <!-- -----------------  START POPUP  ---------------------- -->
-    <section id="contacts">
+    <section>
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <button type="button"><img src="img/close-cross.svg" alt="Закрыть"></button>
