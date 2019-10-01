@@ -11,7 +11,7 @@
     <nav class="main-navigation">
       <a  class="header-logo" href="index.html"><img src="img/nerds-logo.svg" alt="Логотип Nerds" width="160" height="65"></a>
       <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
+        <li><a class="current-link" href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li> <!-- ссылка на POPUP Нпишите нам -->
@@ -25,23 +25,23 @@
   </header>
   <main>
     <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
-    <section>
-      <div class="slides">
-        <h2 class="slides-head">Долго, дорого, скрупулезно.</h2>
-        <p class="slides-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="slides-button" href="#">Узнать больше</a>
+    <section class="slides-block">
+      <div class="slide1">
+        <h2 class="slide-head">Долго, дорого, скрупулезно.</h2>
+        <p class="slide-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+        <a class="slide-button" href="#">Узнать больше</a>
         <img src="img/slide1.png" alt="Слайд 1" width="698" height="413">
       </div>
-      <div>
-        <h2 class="slides-head">Любим математику как никто другой</h2>
+      <div class="slide2">
+        <h2 class="slide-head">Любим математику как никто другой</h2>
         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-        <a class="slides-button" href="#">Узнать больше</a>
+        <a class="slide-button" href="#">Узнать больше</a>
         <img src="img/slide2.png" alt="Слайд 2" width="663" height="430">
       </div>
-      <div>
-        <h2 class="slides-head">Только ночь, только хардкор</h2>
+      <div class="slide3">
+        <h2 class="slide-head">Только ночь, только хардкор</h2>
         <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-        <a class="slides-button" href="#">Узнать больше</a>
+        <a class="slide-button" href="#">Узнать больше</a>
         <img src="img/slide3.png" alt="Слайд 3" width="759" height="411">
       </div>
     </section>
@@ -69,28 +69,28 @@
       </ul>
     </section>
     <section>
-      <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+      <h2 class="adv-head">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+      <p class="adv-txt">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
         превыше креатива. Работаем не покладая рук, как роботы.
       </p>
-      <h3>Выполняем заказы на разработку:</h3>
-      <ul>
+      <h3 class="work-head">Выполняем заказы на разработку:</h3>
+      <ul class="work-list">
         <li>Веб-сайтов любой сложности</li>
         <li>Мобильных приложений для iOS и Android</li>
         <li>Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
     </section>
-    <section>
+    <section class="methods">
       <h2 class="visually-hidden">Принципы работы</h2>
       <img src="img/nerds-illustration.png" alt="Логотип Nerds" width="360" height="208">
       <table>
-        <caption>с 2004 года Любим точность во всем:</caption>
-        <tr>
-          <td>146 %</td>
-          <td>100 %</td>
-          <td>50 %</td>
+        <caption class="methods-caption">с 2004 года Любим точность во всем:</caption>
+        <tr class="percent">
+          <td>146 <sup>%</sup></td>
+          <td>100 <sup>%</sup></td>
+          <td>50 <sup>%</sup></td>
         </tr>
-        <tr>
+        <tr class="methods-text">
           <td>Уровень самоотдачи</td>
           <td>Соблюдение сроков</td>
           <td>Минимальная предоплата</td>
@@ -121,15 +121,15 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="contact-info">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <p>NЁRDS DESIGN STUDIO</p>
-      <address>
+      <p class="company">NЁRDS DESIGN STUDIO</p>
+      <address class="address">
         191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8
       </address>
-      <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-      <a href="mailto:nowhere@mozilla.org">Напишите нам</a>
+      <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+      <a class="writeus-button" href="mailto:nowhere@mozilla.org">Напишите нам</a>
     </section>
     <!-- -----------------  START POPUP  ---------------------- -->
     <section>
@@ -150,9 +150,7 @@
       </form>
     </section>
     <!-- -----------------  END POPUP  ---------------------- -->
-    <div>
-      <img src="img/map-m.png" alt="Схема проезда" width="1440" height="416">
-    </div>
+    <div><img src="img/map-m.png" alt="Схема проезда" width="1440" height="416"></div>
   </main>
   <footer>
     <ul class="social-list">
