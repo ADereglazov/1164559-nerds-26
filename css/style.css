@@ -99,11 +99,13 @@ a { text-decoration: none }
 }
 
 .order {
-  text-transform: uppercase;
+  display:table-cell;
+  width: 160px;
+  height: 50px;
   text-align: center;
-  padding: 10px 40px; /* Размер от балды - исправить. Как сделать? */
+  vertical-align: middle;
+  text-transform: uppercase;
   color: #ffffff;
-  line-height: 18px;
 }
 
 .order-button1 { background-color: #fb565a }
@@ -141,9 +143,9 @@ a { text-decoration: none }
 
 .social-link {
   display: block;
-  width: 70px;
-  height: 70px;
-  margin: 10px;
+  width: 70px; /* Уточнить */
+  height: 70px; /* Уточнить */
+  margin: 10px; /* Уточнить */
   background-color: #e1e1e1;
   border-radius: 50%;
   float: left;
@@ -164,8 +166,8 @@ a { text-decoration: none }
   font-size: 55px;
   text-align: center;
   line-height: 55px;
-  padding: 100px 0;
   margin: 0;
+  padding: 100px 0;
   background-color: #eeeeee;
 }
 
@@ -189,29 +191,37 @@ a { text-decoration: none }
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  padding: 14px 57px; /* Размер от балды - исправить. Как сделать? */
   color: #000000;
-  line-height: 18px;
+  background-color: #eeeeee;
+  border: none;
+  box-sizing: content-box;
+  width: 260px;
+  height: 50px;
+  padding: 0;
 }
 .show-button:hover { background-color: #dfdfdf }
-.show-button:active { opacity: 0.5;  background-color: #d5d5d5 }
+.show-button:active {
+  opacity: 0.5;
+  background-color: #d5d5d5;
+  border-top: 3px solid #bfbfbf;
+}
 
 .catalog-popup {
   width: 360px;
+  height: 231px;
   text-align: center;
-  padding: 20px 0; /* Уточнить */
   background-color: #eeeeee;
 }
 
-.catalog-popup a {
+.catalog-popup h3 {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
 }
 
-.catalog-popup a:hover { color: #ff525b } /* Стоит ли объединить с такими же свойствами для главного меню ???*/
-.catalog-popup a:active { color: #bebebe } /* Стоит ли объединить с такими же свойствами для главного меню ???*/
+.catalog-popup h3:hover { color: #ff525b }
+.catalog-popup h3:active { color: #bebebe }
 
 .catalog-popup p {
   line-height: 18px;
@@ -219,9 +229,14 @@ a { text-decoration: none }
 }
 
 .catalog-popup span {
+  position: relative;
+  display: table-cell;
+  left: 80px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
-  padding: 15px 60px;
-  line-height: 18px;
   color: #ffffff;
   background-color: #fb565a;
 }
