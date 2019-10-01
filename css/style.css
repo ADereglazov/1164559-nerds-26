@@ -255,6 +255,8 @@ a { text-decoration: none }
 .browser-img { opacity: 0.09 }
 .browser-img:hover { opacity: 1 }
 
+.catalog-list img:hover  ~ .browser-img { opacity: 1 }
+
 .catalog-popup {
   width: 360px;
   height: 231px;
