@@ -224,18 +224,11 @@ a { text-decoration: none }
   line-height: 18px;
 }
 
-.invite {
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 36px;
-  color: #000000;
-}
+.main-footer { display: flex; height: 220px }
 
-.discount {
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 22px;
-  color: #444444;
+.social-list {
+  display: flex;
+  margin-left: 144px;
 }
 
 .social-link {
@@ -244,7 +237,8 @@ a { text-decoration: none }
   height: 80px;
   background-color: #e1e1e1;
   border-radius: 50%;
-  float: left;
+  margin-top: 69px;
+  margin-right: 13px;
 }
 
 .social-link img {
@@ -258,6 +252,22 @@ a { text-decoration: none }
 .social-link:active { background-color: #d7363b }
 .social-link:active img { opacity: 0.5 }
 
+.invite {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #000000;
+  margin-left: 127px;
+  margin-top: 77px;
+}
+
+.discount {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #444444;
+}
+
 .page-title {
   font-size: 55px;
   text-align: center;
@@ -267,9 +277,7 @@ a { text-decoration: none }
   background-color: #eeeeee;
 }
 
-.filters fieldset {
-  border: none;
-}
+.filters fieldset { border: none }
 
 .filters legend, .sort-label {
   font-size: 18px;
@@ -278,15 +286,9 @@ a { text-decoration: none }
   text-transform: uppercase;
 }
 
-.filters label {
-  font-size: 16px;
-  line-height: 20px;
-}
+.filters label { font-size: 16px; line-height: 20px }
 
-.sort-list a {
-  font-size: 14px;
-  color: #ededed;
-}
+.sort-list a { font-size: 14px; color: #ededed }
 .sort-list a:hover { color: #a8a8a8 }
 .sort-list a:active { color: #000000 }
 
@@ -340,10 +342,7 @@ a { text-decoration: none }
 .catalog-popup h3:hover { color: #ff525b }
 .catalog-popup h3:active { color: #bebebe }
 
-.catalog-popup p {
-  line-height: 18px;
-  color: #666666;
-}
+.catalog-popup p { line-height: 18px; color: #666666 }
 
 .price-button {
   position: relative;
