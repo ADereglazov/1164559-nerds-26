@@ -39,6 +39,7 @@ body {
   line-height: 24px;
   margin: 0;
   padding: 0;
+  min-width: 1200px;
   color: #283136;
   background-color: #ffffff;
 }
@@ -105,9 +106,27 @@ a {
   justify-content: space-between;
 }
 
+.site-navigation li,
+.cart-navigation li {
+  line-height: normal;
+}
+
 .header-logo {
   margin-top: 49px;
   margin-right: 202px;
+}
+
+.index-link {
+  pointer-events: none;
+  cursor: default;
+}
+
+.header-logo:hover {
+  opacity: 0.8;
+}
+
+.header-logo:active {
+  opacity: 0.35;
 }
 
 .cart-navigation {
@@ -152,6 +171,7 @@ a {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
+  margin-top: 0;
   color: #000000;
 }
 
@@ -343,12 +363,16 @@ a {
   color: #444444;
 }
 
+.map {
+  text-align: center;
+}
+
 .page-title {
   font-size: 55px;
   text-align: center;
   line-height: 55px;
   margin: 0;
-  padding: 100px 0;
+  padding: 85px 0 117px 0;
   background-color: #eeeeee;
 }
 
