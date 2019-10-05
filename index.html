@@ -112,37 +112,22 @@
           <li><a href="#"><img src="img/logo-4.png" alt="Логотип «Mishka»"></a></li>
         </ul>
       </section>
-      <section class="contact-info">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <p class="company">NЁRDS DESIGN STUDIO</p>
-        <address class="address">
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8
-        </address>
-        <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        <a class="writeus-button" href="mailto:nowhere@mozilla.org">Напишите нам</a>
-      </section>
     </div>
-    <!-- -----------------  START POPUP  ---------------------- -->
-    <section>
-      <h2>Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <button type="button"><img src="img/close-cross.svg" alt="Закрыть"></button>
-        <p>
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
-          <label for="email-field">Ваш e-mail:</label>
-          <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
-        </p>
-        <p>
-          <label for="letter-field">Текст письма:</label>
-          <textarea name="letter" id="letter-field" rows="4" placeholder="В свободной форме" required></textarea>
-        </p>
-        <button type="submit">Отправить</button>
-      </form>
-    </section>
-    <!-- -----------------  END POPUP  ---------------------- -->
-    <div class="map"><img src="img/map-m.png" alt="Схема проезда" width="1440" height="416"></div>
+    <div class="map">
+      <div class="container">
+        <section class="contact-info">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <p class="company">NЁRDS DESIGN STUDIO</p>
+          <address class="address">
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+          </address>
+          <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <a class="writeus-button" href="mailto:nowhere@mozilla.org">Напишите нам</a>
+        </section>
+      </div>
+      <img src="img/map-m.png" alt="Схема проезда" width="1440" height="416">
+    </div>
   </main>
   <footer class="main-footer">
     <div class="container footer-items">
@@ -158,4 +143,23 @@
     </div>
   </footer>
 </body>
+<!-- -----------------  START POPUP  ---------------------- -->
+<section>
+  <h2>Напишите нам</h2>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <button type="button"><img src="img/close-cross.svg" alt="Закрыть"></button>
+    <p>
+      <label for="name-field">Ваше имя:</label>
+      <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
+      <label for="email-field">Ваш e-mail:</label>
+      <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
+    </p>
+    <p>
+      <label for="letter-field">Текст письма:</label>
+      <textarea name="letter" id="letter-field" rows="4" placeholder="В свободной форме" required></textarea>
+    </p>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+<!-- -----------------  END POPUP  ---------------------- -->
 </html>
