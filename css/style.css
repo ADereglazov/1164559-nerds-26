@@ -363,6 +363,7 @@ a {
 .partners {
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
+  margin-bottom: 80px;
 }
 
 .partners-list {
@@ -447,6 +448,11 @@ a {
 .catalog-body {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.catalog-section {
+  margin-bottom: 60px;
 }
 
 .catalog-base-block {
