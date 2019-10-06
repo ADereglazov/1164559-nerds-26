@@ -168,8 +168,14 @@ a {
 
 .slide1, .slide2, .slide3 {
   display: flex;
+  position: relative;
   height: 430px;
 }
+
+.slide2, .slide3 {
+  display: none;
+}
+
 
 .slides-text {
   display: flex;
@@ -226,6 +232,29 @@ a {
   color: #e08a8d;
   background-color: #d7363b;
   border-top: 3px solid #bf3336;
+}
+
+.slide-navigation {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 88px;
+  height: 18px;
+  bottom: 96px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider-dot {
+  position: absolute;
+}
+
+.slide2-btn:active{
+
+}
+
+.slide3-btn:active {
+
 }
 
 .propositions-section {
@@ -342,6 +371,7 @@ a {
 
 .methods table{
   width: 100%;
+  margin-top: 41px;
 }
 
 .methods-caption {
@@ -354,10 +384,14 @@ a {
   font-size: 45px;
   font-weight: bold;
   color: #000000;
+  line-height: 45px;
+  height: 98px;
+  vertical-align: bottom;
 }
 
 .methods-text {
   line-height: 18px;
+  height: 44px;
 }
 
 .partners {
@@ -371,6 +405,18 @@ a {
   align-items: center;
   justify-content: space-between;
   height: 180px;
+}
+
+.partners-list img {
+  opacity: 0.2;
+}
+
+.partners-list img:hover {
+  opacity: 1;
+}
+
+.partners-list a:active {
+  opacity: 0.1;
 }
 
 .main-footer {
@@ -434,6 +480,10 @@ a {
 
 .map {
   text-align: center;
+}
+
+.map-container {
+  position: relative;
 }
 
 .page-title {
@@ -580,7 +630,7 @@ a {
   opacity: 1;
 }
 
-.catalog-list img:hover  ~ .browser-img {
+.catalog-list img:hover  + .browser-img {
   opacity: 1;
 }
 
@@ -681,7 +731,8 @@ a {
   height: 308px;
   text-align: left;
   padding: 50px;
-  margin-top: 54px;
+  top: 54px;
+  left:0;
   background-color: #ffffff;
 }
 
@@ -721,8 +772,141 @@ a {
   border-top: 3px solid #bf3336;
 }
 
-
-/* POPUP Временно отключен --- 12. Личный проект: начинаем базовую стилизацию --- */
-#writeus {
-  display: none;
+.writeus {
+  display: block;
+  position: relative;
+  width: 960px;
+  height: 590px;
+  border: 1px solid #000000;
 }
+
+.writeus h2 {
+  font-size: 45px;
+  margin-top: 73px;
+  margin-left: 101px;
+}
+
+.writeus-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  opacity: 0.5;
+}
+
+.writeus-close:hover {
+  opacity: 1;
+}
+
+.writeus-close:active {
+  opacity: 0.25;
+  outline: none;
+}
+
+.writeus-name-label,
+.writeus-email-label,
+.writeus-text-label {
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+}
+
+.writeus-name-label {
+  top: 155px;
+  left: 100px;
+}
+
+.writeus-email-label {
+  top: 155px;
+  left: 500px;
+}
+
+.writeus-text-label {
+  top: 266px;
+  left: 100px;
+}
+
+.writeus-name-field,
+.writeus-email-field {
+  display: inline-block;
+  position: absolute;
+  font-size: 16px;
+  line-height: 18px;
+  width: 360px;
+  height: 50px;
+  top: 180px;
+  padding-left: 15px;
+  border: 2px solid #d7dbdc;
+  border-radius: 2px;
+}
+
+.writeus-name-field {
+  left: 100px;
+}
+
+.writeus-email-field {
+  right: 100px;
+}
+
+.writeus-textarea {
+  display: inline-block;
+  position: absolute;
+  font-size: 16px;
+  line-height: 18px;
+  width: 760px;
+  height: 118px;
+  top: 290px;
+  left: 100px;
+  padding-left: 15px;
+  border: 2px solid #d7dbdc;
+  border-radius: 2px;
+}
+
+.writeus-send {
+  position: absolute;
+  bottom: 84px;
+  left: 100px;
+  box-sizing: content-box;
+  width: 260px;
+  height: 50px;
+  padding: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.writeus-send:hover {
+  background-color: #e74246;
+  border-color: #dfdfdf;
+}
+
+.writeus-send:active {
+  opacity: 0.5;
+  background-color: #d7363b;
+}
+
+.writeus-name-field:hover,
+.writeus-email-field:hover,
+.writeus-textarea:hover {
+  border-color: #b5b9ba;
+}
+
+.writeus-name-field:focus,
+.writeus-email-field:focus,
+.writeus-textarea:focus {
+  outline: none;
+  border-color: #000000;
+}
+/*
+.writeus-name-field:invalid,
+.writeus-email-field:invalid,
+.writeus-textarea:invalid {
+  outline: none;
+  border-color: #e64044;
+}
+*/
