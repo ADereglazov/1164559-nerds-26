@@ -307,7 +307,6 @@ a {
 .order-button1:active {
   color: #e08685;
   background-color: #d7363b;
-  border-top: 3px;
   border-top: 3px solid #bf3336;
 }
 
@@ -322,7 +321,6 @@ a {
 .order-button2:active {
   color: #78c39c;
   background-color: #00aa63;
-  border-top: 3px;
   border-top: 3px solid #029858;
 }
 
@@ -778,13 +776,12 @@ a {
   display: block;
   position: absolute;
   width: 960px;
-  height: 590px;
-  border: 1px solid #000000;
+  min-height: 590px;
 }
 
 .writeus h2 {
   font-size: 45px;
-  line-height: normal;
+  line-height: 45px;
   margin-top: 73px;
   margin-left: 101px;
 }
@@ -811,17 +808,25 @@ a {
 }
 
 .writeus-fields {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: block;
   width: 760px;
   height: 350px;
   margin: 0 100px;
 }
 
+.writeus-short-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
 .writeus-label-field {
   display: flex;
   flex-direction: column;
+}
+
+.writeus-fields > .writeus-label-field {
+  margin-top: 36px;
+  margin-bottom: 47px;
 }
 
 .writeus-name-label,
@@ -830,7 +835,6 @@ a {
   font-size: 16px;
   font-weight: bold;
 }
-
 
 .writeus-name-field,
 .writeus-email-field {
@@ -844,6 +848,7 @@ a {
 }
 
 .writeus-textarea {
+  resize: none;
   font-size: 16px;
   line-height: 18px;
   width: 760px;
@@ -855,26 +860,31 @@ a {
 
 .writeus-send {
   box-sizing: content-box;
-  width: 260px;
-  height: 50px;
+  width: 256px;
+  height: 44px;
   padding: 0;
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
   background-color: #fb565a;
+  border: 2px solid #fb565a;
+  border-radius: 2px;
 }
 
 .writeus-send:hover {
   cursor: pointer;
   background-color: #e74246;
-  border-color: #dfdfdf;
+  border-color: #e74246;
 }
 
 .writeus-send:active {
   cursor: pointer;
-  opacity: 0.5;
+  outline: none;
+  color: #e08a8d;
   background-color: #d7363b;
+  border-color: #d7363b;
+  border-top-color: #bf3336;
 }
 
 .writeus-name-field:hover,
