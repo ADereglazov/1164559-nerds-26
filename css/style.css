@@ -110,6 +110,7 @@ a {
   display: flex;
   width: 438px;
   justify-content: space-between;
+  margin-top: 12px;
 }
 
 .header-logo {
@@ -133,6 +134,7 @@ a {
 .cart-navigation {
   display: flex;
   width: 116px;
+  margin-top: 12px;
   margin-left: auto;
 }
 
@@ -171,6 +173,10 @@ a {
   position: relative;
   height: 430px;
 }
+
+.slide1 img, .slide2 img, .slide3 img {
+  margin-top: auto;
+}
 /*
 .slide2, .slide3 {
   display: none;
@@ -181,9 +187,9 @@ a {
   display: flex;
   flex-direction: column;
   width: 645px;
-  height: 264px;
-  margin-top: auto;
-  margin-bottom: 80px;
+  height: 270px;
+  margin-top: 80px;
+  margin-bottom: auto;
 }
 
 .slide1-img {
@@ -209,7 +215,7 @@ a {
 
 .slides-text p {
   margin-top: 0;
-  margin-bottom: auto;
+  margin-bottom: 34px;
 }
 
 .slide-button {
@@ -236,7 +242,7 @@ a {
   background-color: #d7363b;
   border-top-color: #bf3336;
 }
-
+/* Навигация по слайдам
 .slide-navigation {
   display: flex;
   justify-content: space-between;
@@ -251,24 +257,15 @@ a {
 .slider-dot {
   position: absolute;
 }
-
-.slide2-btn:active{
-
-}
-
-.slide3-btn:active {
-
-}
-
+*/
 .propositions-section {
   border-bottom: 2px solid #eeeeee;
 }
 
 .propositions {
   display: flex;
-  margin-top: 80px;
-  margin-right: 60px;
-  margin-bottom: 80px;
+  height: 347px;
+  margin: 80px 60px 80px 0;
   justify-content: space-between;
 }
 
@@ -283,9 +280,14 @@ a {
 
 .propositions-head {
   font-size: 24px;
-  line-height: 30px;
+  margin-top: 26px;
+  margin-bottom: 22px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.propositions-text {
+  margin: 0;
 }
 
 .order-button {
@@ -297,6 +299,8 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 3px;
+  margin-top: auto;
+
 }
 
 .order-button1 {
@@ -362,12 +366,22 @@ a {
   font-weight: 500;
   line-height: 45px;
   color: #000000;
+  margin-top: 40px;
+  margin-bottom: 31px;
+}
+
+.adv-txt {
+  padding: 0;
+  margin: 0;
 }
 
 .work-head {
   font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 46px;
+
 }
 
 .work-list li:before {
@@ -377,14 +391,24 @@ a {
   height: 2px;
   vertical-align: middle;
   background-color: #fb565a;
+  margin-right: 11px;
+}
+.work-list li {
+  line-height: 46px;
 }
 
 .methods table{
   width: 100%;
-  margin-top: 41px;
+  border-spacing: 0;
+  margin-top: 33px;
+}
+
+.methods-table td {
+  padding: 0;
 }
 
 .methods-caption {
+  line-height: 16px;
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
@@ -395,13 +419,17 @@ a {
   font-weight: bold;
   color: #000000;
   line-height: 45px;
-  height: 98px;
+  height: 93px;
   vertical-align: bottom;
 }
 
 .methods-text {
-  line-height: 18px;
-  height: 44px;
+  line-height: 16px;
+  vertical-align: top;
+}
+
+.methods-text td {
+  padding-top: 16px;
 }
 
 .partners {
@@ -501,7 +529,7 @@ a {
   text-align: center;
   line-height: 55px;
   margin: 0;
-  padding: 80px 0 117px 0;
+  padding: 75px 0 108px 0;
   background-color: #eeeeee;
 }
 
@@ -657,10 +685,12 @@ a {
 
 .catalog-popup h3 {
   font-size: 18px;
-  line-height: 30px;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 35px;
+  margin-bottom: 18px;
 }
+
 .catalog-popup h3:hover {
   color: #ff525b;
 }
@@ -671,6 +701,7 @@ a {
 
 .catalog-popup p {
   line-height: 18px;
+  margin-bottom: 28px;
   color: #666666;
 }
 
@@ -754,18 +785,18 @@ a {
   width: 319px;
   height: 308px;
   text-align: left;
-  padding: 50px;
+  padding: 54px 50px 47px 50px;
   top: 54px;
-  left:0;
+  left: 20px;
   background-color: #ffffff;
 }
 
 .company {
   font-size: 18px;
   font-weight: bold;
-  line-height: 30px;
-  text-align: center;
   color: #000000;
+  margin-top: 0;
+  margin-bottom: 27px;
 }
 
 .address,
@@ -773,6 +804,10 @@ a {
   font-style: normal;
   line-height: 18px;
   color: #283136;
+}
+
+.address {
+  margin-bottom: 14px;
 }
 
 .writeus-button {
@@ -785,6 +820,7 @@ a {
   background-color: #fb565a;
   border: 3px solid #fb565a;
   border-radius: 3px;
+  margin-top: 35px;
 }
 
 .writeus-button:hover {
