@@ -179,17 +179,21 @@
     <h2>Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
       <button type="button" class="writeus-close"><img src="img/close-cross.svg" alt="Закрыть"></button>
-      <p>
-        <label for="name-field" class="writeus-name-label">Ваше имя:</label>
-        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required class="writeus-name-field">
-        <label for="email-field" class="writeus-email-label">Ваш e-mail:</label>
-        <input type="email" name="email" id="email-field" placeholder="email@example.com" required class="writeus-email-field">
-      </p>
-      <p>
-        <label for="letter-field" class="writeus-text-label">Текст письма:</label>
-        <textarea name="letter" id="letter-field" placeholder="В свободной форме" required class="writeus-textarea"></textarea>
-      </p>
-      <button type="submit" class="writeus-send">Отправить</button>
+      <div class="writeus-fields">
+        <div class="writeus-label-field">
+          <label for="name-field" class="writeus-name-label">Ваше имя:</label>
+          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required class="writeus-name-field">
+        </div>
+        <div class="writeus-label-field">
+          <label for="email-field" class="writeus-email-label">Ваш e-mail:</label>
+          <input type="email" name="email" id="email-field" placeholder="email@example.com" required class="writeus-email-field">
+        </div>
+        <div class="writeus-label-field">
+          <label for="letter-field" class="writeus-text-label">Текст письма:</label>
+          <textarea name="letter" id="letter-field" placeholder="В свободной форме" required class="writeus-textarea"></textarea>
+        </div>
+        <button type="submit" class="writeus-send">Отправить</button>
+      </div>
     </form>
   </section>
   <!-- -----------------  END POPUP  ---------------------- -->
