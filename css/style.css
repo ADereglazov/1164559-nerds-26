@@ -555,12 +555,13 @@ a {
 
 .catalog-item {
   display: flex;
+  position: relative;
   flex-direction: column;
-  margin-bottom: -198px;
+  margin-bottom: 33px;
 }
 
 .catalog-item:nth-last-child(-n+2) {
-  margin-bottom: -231px;
+  margin-bottom: 0;
 }
 
 .catalog-item:hover .catalog-popup {
@@ -687,10 +688,10 @@ a {
 }
 
 .catalog-popup {
-  position: relative;
-  width: 360px;
+  position: absolute;
+  width: 100%;
   height: 231px;
-  bottom: 231px;
+  bottom: 0;
   text-align: center;
   background-color: #eeeeee;
   visibility: hidden;
