@@ -517,7 +517,7 @@ a {
 }
 
 .map {
-  text-align: center;
+  width: 1440px;
 }
 
 .map-container {
@@ -556,6 +556,15 @@ a {
 .catalog-item {
   display: flex;
   flex-direction: column;
+  margin-bottom: -198px;
+}
+
+.catalog-item:nth-last-child(-n+2) {
+  margin-bottom: -231px;
+}
+
+.catalog-item:hover .catalog-popup {
+  visibility: visible;
 }
 
 .catalog-item img:nth-of-type(2) {
@@ -672,15 +681,19 @@ a {
   opacity: 1;
 }
 
-.catalog-list img:hover  + .browser-img {
+.catalog-list img:hover  ~ .browser-img,
+.catalog-popup:hover  ~ .browser-img {
   opacity: 1;
 }
 
 .catalog-popup {
+  position: relative;
   width: 360px;
   height: 231px;
+  bottom: 231px;
   text-align: center;
   background-color: #eeeeee;
+  visibility: hidden;
 }
 
 .catalog-popup h3 {
