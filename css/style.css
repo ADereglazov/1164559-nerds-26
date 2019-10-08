@@ -174,15 +174,6 @@ a {
   height: 430px;
 }
 
-.slide1 img, .slide2 img, .slide3 img {
-  margin-top: auto;
-}
-/*
-.slide2, .slide3 {
-  display: none;
-}
-*/
-
 .slides-text {
   display: flex;
   flex-direction: column;
@@ -190,6 +181,10 @@ a {
   height: 270px;
   margin-top: 80px;
   margin-bottom: auto;
+}
+
+.slide1-img, .slide2-img, .slide3-img {
+  margin-top: auto;
 }
 
 .slide1-img {
@@ -242,22 +237,7 @@ a {
   background-color: #d7363b;
   border-top-color: #bf3336;
 }
-/* Навигация по слайдам
-.slide-navigation {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  width: 88px;
-  height: 18px;
-  bottom: 96px;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
-.slider-dot {
-  position: absolute;
-}
-*/
 .propositions-section {
   border-bottom: 2px solid #eeeeee;
 }
@@ -300,7 +280,6 @@ a {
   color: #ffffff;
   border-radius: 3px;
   margin-top: auto;
-
 }
 
 .order-button1 {
