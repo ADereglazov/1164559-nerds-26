@@ -216,26 +216,23 @@ a {
 .slide-button {
   display: inline-block;
   width: 240px;
-  line-height: 44px;
+  line-height: 50px;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #fb565a;
-  border: 3px solid #fb565a;
   border-radius: 3px;
 }
 
 .slide-button:hover {
-  border-color: #e74246;
   background-color: #e74246;
 }
 
 .slide-button:active {
-  color: #e08a8d;
-  border-color: #d7363b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #d7363b;
-  border-top-color: #bf3336;
 }
 
 .propositions-section {
@@ -273,7 +270,7 @@ a {
 .order-button {
   display: inline-block;
   width: 160px;
-  line-height: 44px;
+  line-height: 50px;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
@@ -283,54 +280,45 @@ a {
 }
 
 .order-button1 {
-  border: 3px solid #fb565a;
   background-color: #fb565a;
 }
 
 .order-button1:hover {
-  border-color: #e74246;
   background-color: #e74246;
 }
 
 .order-button1:active {
-  color: #e08685;
-  border-color: #d7363b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #d7363b;
-  border-top-color: #bf3336;
 }
 
 .order-button2 {
-  border: 3px solid #00ca74;
   background-color: #00ca74;
 }
 
 .order-button2:hover {
-  border-color: #01bc6d;
   background-color: #01bc6d;
 }
 
 .order-button2:active {
-  color: #78c39c;
-  border-color: #00aa63;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #00aa63;
-  border-top-color: #029858;
 }
 
 .order-button3 {
-  border: 3px solid #efc84a;
   background-color: #efc84a;
 }
 
 .order-button3:hover {
-  border-color: #eab535;
   background-color: #eab535;
 }
 
 .order-button3:active {
-  color: #ebc67f;
-  border-color: #e6a823;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #e6a823;
-  border-top-color: #cd9621;
 }
 
 .work-block {
@@ -497,6 +485,7 @@ a {
 
 .map {
   width: 1440px;
+  margin: 0 auto;
 }
 
 .map-container {
@@ -701,24 +690,21 @@ a {
 .price-button {
   display: inline-block;
   width: 200px;
-  line-height: 44px;
+  line-height: 50px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #fb565a;
-  border: 3px solid #fb565a;
   border-radius: 3px;
 }
 
 .price-button:hover {
-  border-color: #e74246;
   background-color: #e74246;
 }
 
 .price-button:active {
-  color: #e08a8d;
-  border-color: #d7363b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #d7363b;
-  border-top-color: #bf3336;
 }
 
 .breadcrambs {
@@ -734,10 +720,10 @@ a {
 .catalog-navigation a {
   display: inline-block;
   text-align: center;
-  line-height: 44px;
+  line-height: 50px;
+  font-weight: 500;
   text-transform: uppercase;
   color: #000000;
-  border: 3px solid #eeeeee;
   border-radius: 3px;
 }
 
@@ -751,25 +737,24 @@ a {
   background-color: #eeeeee;
 }
 
-.current-page {
+.catalog-navigation .current-page {
   pointer-events: none;
   cursor: default;
+  line-height: 44px;
   background-color: #ffffff;
-  border-color: #dbdbdb;
+  border: 3px solid #dbdbdb;
 }
 
 .list-item:hover,
 .next-page:hover {
-  border-color: #dfdfdf;
   background-color: #dfdfdf;
 }
 
 .list-item:active,
 .next-page:active {
-  color: #bfbfbf;
-  border-color: #d5d5d5;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
-  border-top-color: #bfbfbf;
 }
 
 .contact-info {
@@ -805,27 +790,24 @@ a {
 
 .writeus-button {
   display: inline-block;
-  width: 219px;
-  line-height: 44px;
+  width: 220px;
+  line-height: 50px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #fb565a;
-  border: 3px solid #fb565a;
   border-radius: 3px;
   margin-top: 35px;
 }
 
 .writeus-button:hover {
-  border-color: #e74246;
   background-color: #e74246;
 }
 
 .writeus-button:active {
-  color: #e08a8d;
-  border-color: #d7363b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #d7363b;
-  border-top-color: #bf3336;
 }
 /* ---------------- POPUP ------------------ */
 .writeus {
