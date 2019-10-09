@@ -30,11 +30,16 @@
           <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend>Стоимость:</legend>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
                 <div class="catalog-prices">
-                  <label for="minprice-field">от</label>
-                  <input type="text" name="minprice" id="minprice-field">
-                  <label for="maxprice-field">до</label>
-                  <input type="text" name="maxprice" id="maxprice-field">
+                  <label for="minprice-field">от<input type="text" name="minprice" id="minprice-field" value="0"></label>
+                  <label for="maxprice-field">до<input type="text" name="maxprice" id="maxprice-field" value="15000"></label>
                 </div>
             </fieldset>
             <fieldset>
