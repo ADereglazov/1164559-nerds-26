@@ -711,8 +711,10 @@ a {
   cursor: pointer;
 }
 
+
 .features-text {
   margin-left: 33px;
+  color: #283136;
 }
 
 .features-fields input[type="checkbox"] {
@@ -727,7 +729,15 @@ a {
   background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 0.7;
 }
-
+/* ============ Проба =============== */
+.chb1:not(checked) ~ .features-controls label[for="slider-field"] .features-text,
+.chb2:not(checked) ~ .features-controls label[for="advantage-field"] .features-text,
+.chb3:not(checked) ~ .features-controls label[for="news-field"] .features-text,
+.chb4:not(checked) ~ .features-controls label[for="gallery-field"] .features-text,
+.chb5:not(checked) ~ .features-controls label[for="basket-field"] .features-text {
+  color: #283136;
+}
+/* ----------------------------------- */
 .chb1:checked ~ .features-controls label[for="slider-field"],
 .chb2:checked ~ .features-controls label[for="advantage-field"],
 .chb3:checked ~ .features-controls label[for="news-field"],
@@ -753,7 +763,6 @@ a {
   opacity: 0.3;
   cursor: default;
 }
-
 
 .sort-section {
   display: flex;
