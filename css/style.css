@@ -642,6 +642,12 @@ a {
   height: 96px;
 }
 
+.grid-text {
+  margin-left: 25px;
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 0 -5px 0 rgba(0, 0, 0, 1);
+}
+
 .grid-fields input[type="radio"] {
   display: none;
 }
@@ -654,17 +660,39 @@ a {
   background-color: #ffffff;
   border: 4px solid white;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(184, 184, 184, 1);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
-#adaptive-field:checked ~ .grid-controls label[for="adaptive-field"],
-#fix-field:checked ~ .grid-controls label[for="fix-field"],
-#flex-field:checked ~ .grid-controls label[for="flex-field"] {
+.btn1:checked ~ .grid-controls label[for="adaptive-field"],
+.btn2:checked ~ .grid-controls label[for="fix-field"],
+.btn3:checked ~ .grid-controls label[for="flex-field"] {
   background-color: #b8b8b8;
 }
 
+.btn1:disabled ~ .grid-controls label[for="adaptive-field"],
+.btn2:disabled ~ .grid-controls label[for="fix-field"],
+.btn3:disabled ~ .grid-controls label[for="flex-field"] {
+  cursor: default;
+  color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+}
 
+.btn1:disabled ~ .grid-controls label[for="adaptive-field"] .grid-text,
+.btn2:disabled ~ .grid-controls label[for="fix-field"] .grid-text,
+.btn3:disabled ~ .grid-controls label[for="flex-field"]  .grid-text {
+  text-shadow: 0 -5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn1:checked ~ .grid-controls label[for="adaptive-field"]:hover,
+.btn2:checked ~ .grid-controls label[for="fix-field"]:hover,
+.btn3:checked ~ .grid-controls label[for="flex-field"]:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.grid-controls label:hover {
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 1);
+}
 
 
 .sort-section {

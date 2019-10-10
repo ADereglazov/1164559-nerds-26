@@ -46,16 +46,13 @@
             <fieldset>
               <legend>Сетка:</legend>
               <div class="grid-fields">
-                <input type="radio" name="grid" id="adaptive-field" value="adaptive" checked>
-                <input type="radio" name="grid" id="fix-field" value="fix">
-                <input type="radio" name="grid" id="flex-field" value="flex">
+                <input type="radio" name="grid" id="adaptive-field" value="adaptive" class="btn1" checked>
+                <input type="radio" name="grid" id="fix-field" value="fix" class="btn2" disabled>
+                <input type="radio" name="grid" id="flex-field" value="flex" class="btn3">
                 <div class="grid-controls">
-                  <label for="adaptive-field"></label>
-                  <label for="fix-field"></label>
-                  <label for="flex-field"></label>
-                  <!--label for="adaptive-field">Адаптивная</label>
-                  <label for="fix-field">Фиксированная</label>
-                  <label for="flex-field">Резиновая</label-->
+                  <label for="adaptive-field"><span class="grid-text">Адаптивная</span></label>
+                  <label for="fix-field"><span class="grid-text">Фиксированная</span></label>
+                  <label for="flex-field"><span class="grid-text">Резиновая</span></label>
                 </div>
               </div>
             </fieldset>
