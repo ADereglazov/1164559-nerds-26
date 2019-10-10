@@ -624,6 +624,7 @@ a {
   line-height: 18px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .filters-form label {
@@ -729,15 +730,7 @@ a {
   background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 0.7;
 }
-/* ============ Проба =============== */
-.chb1:not(checked) ~ .features-controls label[for="slider-field"] .features-text,
-.chb2:not(checked) ~ .features-controls label[for="advantage-field"] .features-text,
-.chb3:not(checked) ~ .features-controls label[for="news-field"] .features-text,
-.chb4:not(checked) ~ .features-controls label[for="gallery-field"] .features-text,
-.chb5:not(checked) ~ .features-controls label[for="basket-field"] .features-text {
-  color: #283136;
-}
-/* ----------------------------------- */
+
 .chb1:checked ~ .features-controls label[for="slider-field"],
 .chb2:checked ~ .features-controls label[for="advantage-field"],
 .chb3:checked ~ .features-controls label[for="news-field"],
@@ -773,6 +766,7 @@ a {
 
 .sort-label {
   margin: 0;
+  color: #000000;
 }
 
 .sort-list {
@@ -788,23 +782,23 @@ a {
 
 .sort-list a {
   font-size: 14px;
-  color: #ededed;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .sort-list a:hover {
-  color: #a8a8a8;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .sort-list a:active {
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
 }
 
 .sort-list img {
-  opacity: 0.25;
+  opacity: 0.3;
 }
 
 .sort-list img:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .sort-list img:active {
