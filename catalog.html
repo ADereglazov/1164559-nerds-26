@@ -42,21 +42,24 @@
                   <label for="maxprice-field">до<input type="text" name="maxprice" id="maxprice-field" value="15000"></label>
                 </div>
             </fieldset>
+
             <fieldset>
               <legend>Сетка:</legend>
-              <div>
+              <div class="grid-fields">
                 <input type="radio" name="grid" id="adaptive-field" value="adaptive" checked>
-                <label for="adaptive-field">Адаптивная</label>
-              </div>
-              <div>
                 <input type="radio" name="grid" id="fix-field" value="fix">
-                <label for="fix-field">Фиксированная</label>
-              </div>
-              <div>
                 <input type="radio" name="grid" id="flex-field" value="flex">
-                <label for="flex-field">Резиновая</label>
+                <div class="grid-controls">
+                  <label for="adaptive-field"></label>
+                  <label for="fix-field"></label>
+                  <label for="flex-field"></label>
+                  <!--label for="adaptive-field">Адаптивная</label>
+                  <label for="fix-field">Фиксированная</label>
+                  <label for="flex-field">Резиновая</label-->
+                </div>
               </div>
             </fieldset>
+
             <fieldset>
               <legend>Особенности:</legend>
               <div>

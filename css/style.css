@@ -608,7 +608,6 @@ a {
   text-align: center;
 }
 
-
 .filters {
   width: 260px;
 }
@@ -629,6 +628,44 @@ a {
 .filters-form label {
   font-size: 16px;
 }
+
+.grid-fields {
+  padding: 4px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.grid-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 96px;
+}
+
+.grid-fields input[type="radio"] {
+  display: none;
+}
+
+.grid-controls label {
+  display: inline-block;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(184, 184, 184, 1);
+  cursor: pointer;
+}
+
+#adaptive-field:checked ~ .grid-controls label[for="adaptive-field"],
+#fix-field:checked ~ .grid-controls label[for="fix-field"],
+#flex-field:checked ~ .grid-controls label[for="flex-field"] {
+  background-color: #b8b8b8;
+}
+
+
+
 
 .sort-section {
   display: flex;
