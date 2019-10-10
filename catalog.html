@@ -57,25 +57,19 @@
             </fieldset>
             <fieldset>
               <legend>Особенности:</legend>
-              <div>
-                <input type="checkbox" name="slider" id="slider-field" checked>
-                <label for="slider-field">Слайдер</label>
-              </div>
-              <div>
-                <input type="checkbox" name="advantage" id="advantage-field">
-                <label for="advantage-field">Блок преимуществ</label>
-              </div>
-              <div>
-                <input type="checkbox" name="news" id="news-field" checked>
-                <label for="news-field">Новости</label>
-              </div>
-              <div>
-                <input type="checkbox" name="gallery" id="gallery-field">
-                <label for="gallery-field">Галерея</label>
-              </div>
-              <div>
-                <input type="checkbox" name="basket" id="basket-field">
-                <label for="basket-field">Корзина</label>
+              <div class="features-fields">
+                <input type="checkbox" name="slider" id="slider-field" class="chb1" checked>
+                <input type="checkbox" name="advantage" id="advantage-field" class="chb2">
+                <input type="checkbox" name="news" id="news-field"  class="chb3" checked>
+                <input type="checkbox" name="gallery" id="gallery-field" class="chb4" disabled>
+                <input type="checkbox" name="basket" id="basket-field" class="chb5">
+                <div class="features-controls">
+                  <label for="slider-field"><span class="features-text">Слайдер</span></label>
+                  <label for="advantage-field"><span class="features-text">Блок&nbsp;преимуществ</span></label>
+                  <label for="news-field"><span class="features-text">Новости</span></label>
+                  <label for="gallery-field"><span class="features-text">Галерея</span></label>
+                  <label for="basket-field"><span class="features-text">Корзина</span></label>
+                </div>
               </div>
             </fieldset>
             <button type="submit" class="show-button">Показать</button>
