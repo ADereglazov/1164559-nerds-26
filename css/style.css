@@ -631,7 +631,7 @@ a {
 
 .grid-fields {
   padding: 4px;
-  margin-top: 20px;
+  margin-top: 16px;
   margin-bottom: 50px;
 }
 
@@ -643,9 +643,9 @@ a {
 }
 
 .grid-text {
-  margin-left: 25px;
+  margin-left: 28px;
   color: rgba(0, 0, 0, 0);
-  text-shadow: 0 -5px 0 rgba(0, 0, 0, 1);
+  text-shadow: 0 -7px 0 rgba(40, 49, 54, 1);
 }
 
 .grid-fields input[type="radio"] {
@@ -681,17 +681,17 @@ a {
 .btn1:disabled ~ .grid-controls label[for="adaptive-field"] .grid-text,
 .btn2:disabled ~ .grid-controls label[for="fix-field"] .grid-text,
 .btn3:disabled ~ .grid-controls label[for="flex-field"]  .grid-text {
-  text-shadow: 0 -5px 0 rgba(0, 0, 0, 0.2);
+  text-shadow: 0 -7px 0 rgba(40, 49, 54, 0.3);
 }
 
 .btn1:checked ~ .grid-controls label[for="adaptive-field"]:hover,
 .btn2:checked ~ .grid-controls label[for="fix-field"]:hover,
 .btn3:checked ~ .grid-controls label[for="flex-field"]:hover {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .grid-controls label:hover {
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 1);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.7);
 }
 
 
