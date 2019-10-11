@@ -757,6 +757,13 @@ a {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.grid-input1:focus + .grid-label-1,
+.grid-input2:focus + .grid-label-2,
+.grid-input3:focus + .grid-label-3 {
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.7);
+}
+
 .grid-controls label:hover {
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.7);
 }
