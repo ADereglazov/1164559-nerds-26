@@ -239,8 +239,8 @@ a {
   width: 88px;
   height: 18px;
   font-size: 0;
-  left: 50%;
   bottom: 96px;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 10;
 }
@@ -268,6 +268,27 @@ a {
   background-color: inherit;
   border: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 50%;
+}
+
+.slider-radio1:focus ~ .slider-controls .slider-controls-item-1::before,
+.slider-radio2:focus ~ .slider-controls .slider-controls-item-2::before,
+.slider-radio3:focus ~ .slider-controls .slider-controls-item-3::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: inherit;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 50%;
+}
+
+.slider-radio1:checked ~ .slider-controls label[for="product-1"],
+.slider-radio2:checked ~ .slider-controls label[for="product-2"],
+.slider-radio3:checked ~ .slider-controls label[for="product-3"] {
+  cursor: default;
 }
 
 .slider-controls label:nth-child(2) {
@@ -699,10 +720,6 @@ a {
   text-shadow: 0 -7px 0 rgba(40, 49, 54, 1);
 }
 
-.grid-fields input[type="radio"] {
-  display: none;
-}
-
 .grid-controls label {
   display: inline-block;
   margin: 0;
@@ -714,29 +731,29 @@ a {
   cursor: pointer;
 }
 
-.grid-input1:checked ~ .grid-controls label[for="adaptive-field"],
-.grid-input2:checked ~ .grid-controls label[for="fix-field"],
-.grid-input3:checked ~ .grid-controls label[for="flex-field"] {
+.grid-input1:checked + .grid-label-1,
+.grid-input2:checked + .grid-label-2,
+.grid-input3:checked + .grid-label-3 {
   background-color: #b8b8b8;
 }
 
-.grid-input1:disabled ~ .grid-controls label[for="adaptive-field"],
-.grid-input2:disabled ~ .grid-controls label[for="fix-field"],
-.grid-input3:disabled ~ .grid-controls label[for="flex-field"] {
+.grid-input1:disabled + .grid-label-1,
+.grid-input2:disabled + .grid-label-2,
+.grid-input3:disabled + .grid-label-3 {
   cursor: default;
   color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
-.grid-input1:disabled ~ .grid-controls label[for="adaptive-field"] .grid-text,
-.grid-input2:disabled ~ .grid-controls label[for="fix-field"] .grid-text,
-.grid-input3:disabled ~ .grid-controls label[for="flex-field"] .grid-text {
+.grid-input1:disabled + .grid-label-1 .grid-text,
+.grid-input2:disabled + .grid-label-2 .grid-text,
+.grid-input3:disabled + .grid-label-3 .grid-text {
   text-shadow: 0 -7px 0 rgba(40, 49, 54, 0.3);
 }
 
-.grid-input1:checked ~ .grid-controls label[for="adaptive-field"]:hover,
-.grid-input2:checked ~ .grid-controls label[for="fix-field"]:hover,
-.grid-input3:checked ~ .grid-controls label[for="flex-field"]:hover {
+.grid-input1:checked + .grid-label-1:hover,
+.grid-input2:checked + .grid-label-2:hover,
+.grid-input3:checked + .grid-label-3:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -766,41 +783,37 @@ a {
   color: #283136;
 }
 
-.features-fields input[type="checkbox"] {
-  display: none;
-}
-
-.chb1:not(checked) ~ .features-controls label[for="slider-field"],
-.chb2:not(checked) ~ .features-controls label[for="advantage-field"],
-.chb3:not(checked) ~ .features-controls label[for="news-field"],
-.chb4:not(checked) ~ .features-controls label[for="gallery-field"],
-.chb5:not(checked) ~ .features-controls label[for="basket-field"] {
+.features-input1:not(checked) + .features-label-1,
+.features-input2:not(checked) + .features-label-2,
+.features-input3:not(checked) + .features-label-3,
+.features-input4:not(checked) + .features-label-4,
+.features-input5:not(checked) + .features-label-5 {
   background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 0.7;
 }
 
-.chb1:checked ~ .features-controls label[for="slider-field"],
-.chb2:checked ~ .features-controls label[for="advantage-field"],
-.chb3:checked ~ .features-controls label[for="news-field"],
-.chb4:checked ~ .features-controls label[for="gallery-field"],
-.chb5:checked ~ .features-controls label[for="basket-field"] {
+.features-input1:checked + .features-label-1,
+.features-input2:checked + .features-label-2,
+.features-input3:checked + .features-label-3,
+.features-input4:checked + .features-label-4,
+.features-input5:checked + .features-label-5 {
   background: url("../img/checkbox-on.svg") no-repeat;
   opacity: 0.7;
 }
 
-.chb1 ~ .features-controls label[for="slider-field"]:hover,
-.chb2 ~ .features-controls label[for="advantage-field"]:hover,
-.chb3 ~ .features-controls label[for="news-field"]:hover,
-.chb4 ~ .features-controls label[for="gallery-field"]:hover,
-.chb5 ~ .features-controls label[for="basket-field"]:hover {
+.features-input1 + .features-label-1:hover,
+.features-input2 + .features-label-2:hover,
+.features-input3 + .features-label-3:hover,
+.features-input4 + .features-label-4:hover,
+.features-input5 + .features-label-5:hover {
   opacity: 1;
 }
 
-.chb1:disabled ~ .features-controls label[for="slider-field"],
-.chb2:disabled ~ .features-controls label[for="advantage-field"],
-.chb3:disabled ~ .features-controls label[for="news-field"],
-.chb4:disabled ~ .features-controls label[for="gallery-field"],
-.chb5:disabled ~ .features-controls label[for="basket-field"] {
+.features-input1:disabled + .features-label-1,
+.features-input2:disabled + .features-label-2,
+.features-input3:disabled + .features-label-3,
+.features-input4:disabled + .features-label-4,
+.features-input5:disabled + .features-label-5 {
   opacity: 0.3;
   cursor: default;
 }
@@ -1050,7 +1063,8 @@ a {
 }
 /* ---------------- POPUP ------------------ */
 .writeus {
-  display: block;
+  display: none;
+  /*display: block;*/
   position: absolute;
   min-width: 960px;
   min-height: 590px;
@@ -1137,12 +1151,10 @@ a {
   width: 260px;
   height: 50px;
   padding: 0;
-
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-
   background-color: #fb565a;
   border: none;
   border-radius: 3px;
@@ -1180,4 +1192,3 @@ a {
   outline: none;
   border-color: #e64044;
 }
-

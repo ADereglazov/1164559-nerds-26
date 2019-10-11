@@ -45,30 +45,46 @@
             <fieldset>
               <legend>Сетка:</legend>
               <div class="grid-fields">
-                <input type="radio" name="grid" id="adaptive-field" value="adaptive" class="visually-hidden grid-input1" checked>
-                <input type="radio" name="grid" id="fix-field" value="fix" class="visually-hidden grid-input2" disabled>
-                <input type="radio" name="grid" id="flex-field" value="flex" class="visually-hidden grid-input3">
                 <div class="grid-controls">
-                  <label for="adaptive-field" class="grid-label-1"><span class="grid-text">Адаптивная</span></label>
-                  <label for="fix-field" class="grid-label-2"><span class="grid-text">Фиксированная</span></label>
-                  <label for="flex-field" class="grid-label-3"><span class="grid-text">Резиновая</span></label>
+                  <input type="radio" name="grid" id="adaptive-field" value="adaptive" class="visually-hidden grid-input1" checked>
+                  <label for="adaptive-field" class="grid-label-1">
+                    <span class="grid-text">Адаптивная</span>
+                  </label>
+                  <input type="radio" name="grid" id="fix-field" value="fix" class="visually-hidden grid-input2" disabled>
+                  <label for="fix-field" class="grid-label-2">
+                    <span class="grid-text">Фиксированная</span>
+                  </label>
+                  <input type="radio" name="grid" id="flex-field" value="flex" class="visually-hidden grid-input3">
+                  <label for="flex-field" class="grid-label-3">
+                    <span class="grid-text">Резиновая</span>
+                  </label>
                 </div>
               </div>
             </fieldset>
             <fieldset>
               <legend>Особенности:</legend>
               <div class="features-fields">
-                <input type="checkbox" name="slider" id="slider-field" class="chb1" checked>
-                <input type="checkbox" name="advantage" id="advantage-field" class="chb2">
-                <input type="checkbox" name="news" id="news-field"  class="chb3" checked>
-                <input type="checkbox" name="gallery" id="gallery-field" class="chb4" disabled>
-                <input type="checkbox" name="basket" id="basket-field" class="chb5">
                 <div class="features-controls">
-                  <label for="slider-field"><span class="features-text">Слайдер</span></label>
-                  <label for="advantage-field"><span class="features-text">Блок&nbsp;преимуществ</span></label>
-                  <label for="news-field"><span class="features-text">Новости</span></label>
-                  <label for="gallery-field"><span class="features-text">Галерея</span></label>
-                  <label for="basket-field"><span class="features-text">Корзина</span></label>
+                  <input type="checkbox" name="slider" id="slider-field" class="visually-hidden features-input1" checked>
+                  <label for="slider-field" class="features-label-1">
+                    <span class="features-text">Слайдер</span>
+                  </label>
+                  <input type="checkbox" name="advantage" id="advantage-field" class="visually-hidden features-input2">
+                  <label for="advantage-field" class="features-label-2">
+                    <span class="features-text">Блок&nbsp;преимуществ</span>
+                  </label>
+                  <input type="checkbox" name="news" id="news-field"  class="visually-hidden features-input3" checked>
+                  <label for="news-field" class="features-label-3">
+                    <span class="features-text">Новости</span>
+                  </label>
+                  <input type="checkbox" name="gallery" id="gallery-field" class="visually-hidden features-input4" disabled>
+                  <label for="gallery-field" class="features-label-4">
+                    <span class="features-text">Галерея</span>
+                  </label>
+                  <input type="checkbox" name="basket" id="basket-field" class="visually-hidden features-input5">
+                  <label for="basket-field" class="features-label-5">
+                    <span class="features-text">Корзина</span>
+                  </label>
                 </div>
               </div>
             </fieldset>
