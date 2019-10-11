@@ -177,7 +177,7 @@ a {
   flex-direction: column;
   width: 645px;
   height: 270px;
-  margin-top: 80px;
+  margin-top: 75px;
   margin-bottom: auto;
 }
 
@@ -203,12 +203,12 @@ a {
   line-height: 55px;
   color: #000000;
   margin-top: 0;
-  margin-bottom: 29px;
+  margin-bottom: 25px;
 }
 
 .slides-text p {
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 40px;
 }
 
 .slide-button {
@@ -260,11 +260,11 @@ a {
 .slider-radio3:checked ~ .slider-controls .slider-controls-item-3::before {
   content: "";
   position: absolute;
-  left: 50%;
-  top: 50%;
   width: 8px;
   height: 8px;
-  margin: -4px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: inherit;
   border: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 50%;
@@ -375,7 +375,7 @@ a {
 .work-block {
   display: flex;
   justify-content: space-between;
-  height: 525px;
+  height: 485px;
   margin-top: 40px;
 }
 
@@ -384,7 +384,7 @@ a {
   font-weight: 500;
   line-height: 45px;
   color: #000000;
-  margin-top: 40px;
+  margin-top: 35px;
   margin-bottom: 31px;
 }
 
@@ -714,29 +714,29 @@ a {
   cursor: pointer;
 }
 
-.btn1:checked ~ .grid-controls label[for="adaptive-field"],
-.btn2:checked ~ .grid-controls label[for="fix-field"],
-.btn3:checked ~ .grid-controls label[for="flex-field"] {
+.grid-input1:checked ~ .grid-controls label[for="adaptive-field"],
+.grid-input2:checked ~ .grid-controls label[for="fix-field"],
+.grid-input3:checked ~ .grid-controls label[for="flex-field"] {
   background-color: #b8b8b8;
 }
 
-.btn1:disabled ~ .grid-controls label[for="adaptive-field"],
-.btn2:disabled ~ .grid-controls label[for="fix-field"],
-.btn3:disabled ~ .grid-controls label[for="flex-field"] {
+.grid-input1:disabled ~ .grid-controls label[for="adaptive-field"],
+.grid-input2:disabled ~ .grid-controls label[for="fix-field"],
+.grid-input3:disabled ~ .grid-controls label[for="flex-field"] {
   cursor: default;
   color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
-.btn1:disabled ~ .grid-controls label[for="adaptive-field"] .grid-text,
-.btn2:disabled ~ .grid-controls label[for="fix-field"] .grid-text,
-.btn3:disabled ~ .grid-controls label[for="flex-field"] .grid-text {
+.grid-input1:disabled ~ .grid-controls label[for="adaptive-field"] .grid-text,
+.grid-input2:disabled ~ .grid-controls label[for="fix-field"] .grid-text,
+.grid-input3:disabled ~ .grid-controls label[for="flex-field"] .grid-text {
   text-shadow: 0 -7px 0 rgba(40, 49, 54, 0.3);
 }
 
-.btn1:checked ~ .grid-controls label[for="adaptive-field"]:hover,
-.btn2:checked ~ .grid-controls label[for="fix-field"]:hover,
-.btn3:checked ~ .grid-controls label[for="flex-field"]:hover {
+.grid-input1:checked ~ .grid-controls label[for="adaptive-field"]:hover,
+.grid-input2:checked ~ .grid-controls label[for="fix-field"]:hover,
+.grid-input3:checked ~ .grid-controls label[for="flex-field"]:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
