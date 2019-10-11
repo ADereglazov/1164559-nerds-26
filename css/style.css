@@ -285,12 +285,6 @@ a {
   border-radius: 50%;
 }
 
-.slider-radio1:checked ~ .slider-controls label[for="product-1"],
-.slider-radio2:checked ~ .slider-controls label[for="product-2"],
-.slider-radio3:checked ~ .slider-controls label[for="product-3"] {
-  cursor: default;
-}
-
 .slider-controls label:nth-child(2) {
   margin: 0 17px;
 }
