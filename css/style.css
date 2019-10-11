@@ -679,6 +679,7 @@ a {
 }
 
 .filters {
+  padding-top: 8px;
   width: 260px;
 }
 
@@ -727,12 +728,12 @@ a {
   height: 18px;
   border: 4px solid white;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(77, 77, 77, 0.3);
+  box-shadow: 0 0 0 4px rgba(77, 77, 77, 0.7);
   cursor: pointer;
 }
 
 .grid-input:checked + .grid-label {
-  background-color: rgba(77, 77, 77, 0.3);
+  background-color: rgba(77, 77, 77, 0.7);
 }
 
 .grid-input:disabled + .grid-label {
@@ -746,16 +747,16 @@ a {
 }
 
 .grid-input:checked + .grid-label:hover {
-  background-color: rgba(77, 77, 77, 0.7);
+  background-color: rgba(77, 77, 77, 1);
 }
 
 .grid-input:focus + .grid-label {
-  background-color: rgba(77, 77, 77, 0.7);
-  box-shadow: 0 0 0 4px rgba(77, 77, 77, 0.7);
+  background-color: rgba(77, 77, 77, 1);
+  box-shadow: 0 0 0 4px rgba(77, 77, 77, 1);
 }
 
 .grid-controls label:hover {
-  box-shadow: 0 0 0 4px rgba(77, 77, 77, 0.7);
+  box-shadow: 0 0 0 4px rgba(77, 77, 77, 1);
 }
 
 .features-fields {
@@ -783,7 +784,7 @@ a {
 .features-custom-box {
   position: absolute;
   width: 26px;
-  height: 23px;
+  height: 26px;
 }
 
 .features-input:not(checked) + .features-label .features-custom-box {
@@ -796,12 +797,12 @@ a {
   opacity: 0.7;
 }
 
-.features-input:not(checked):not(disabled):hover + .features-label .features-custom-box {
+.features-input:not(checked):hover + .features-label .features-custom-box {
   background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 1;
 }
 
-.features-input:checked:not(disabled):hover + .features-label .features-custom-box {
+.features-input:checked:hover + .features-label .features-custom-box {
   background: url("../img/checkbox-on.svg") no-repeat;
   opacity: 1;
 }
@@ -821,27 +822,33 @@ a {
   cursor: default;
 }
 
+.features-input:disabled:hover + .features-label .features-custom-box {
+  opacity: 0.7;
+}
+
 .sort-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .sort-label {
   margin: 0;
-  color: #000000;
 }
 
 .sort-list {
   display: flex;
-  justify-content: space-between;
   width: 360px;
   text-transform: uppercase;
 }
 
+.sort-list li:nth-child(-n+2) {
+  margin-right: 27px;
+}
 .sort-list li:nth-last-child(2) {
-  margin-left: 48px;
+  margin-left: 45px;
+  margin-right: 18px;
 }
 
 .sort-list a {
