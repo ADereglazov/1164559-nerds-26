@@ -167,13 +167,9 @@ a {
 }
 
 .slide1, .slide2, .slide3 {
-  display: flex;
+  display: none;
   position: relative;
   height: 430px;
-}
-
-.slide2, .slide3 {
-  display: none;
 }
 
 .slides-text {
@@ -235,6 +231,59 @@ a {
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7363b;
+}
+
+.slider-controls {
+  display: inline-block;
+  position: absolute;
+  width: 88px;
+  height: 18px;
+  font-size: 0;
+  left: 50%;
+  bottom: 96px;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.slider-controls-item {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-radio1:checked ~ .slider-controls .slider-controls-item-1::before,
+.slider-radio2:checked ~ .slider-controls .slider-controls-item-2::before,
+.slider-radio3:checked ~ .slider-controls .slider-controls-item-3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.slider-controls label:nth-child(2) {
+  margin: 0 17px;
+}
+
+.slider-radio1:checked ~ .slide1 {
+  display: flex;
+}
+
+.slider-radio2:checked ~ .slide2 {
+  display: flex;
+}
+
+.slider-radio3:checked ~ .slide3 {
+  display: flex;
 }
 
 .propositions-section {
@@ -681,7 +730,7 @@ a {
 
 .btn1:disabled ~ .grid-controls label[for="adaptive-field"] .grid-text,
 .btn2:disabled ~ .grid-controls label[for="fix-field"] .grid-text,
-.btn3:disabled ~ .grid-controls label[for="flex-field"]  .grid-text {
+.btn3:disabled ~ .grid-controls label[for="flex-field"] .grid-text {
   text-shadow: 0 -7px 0 rgba(40, 49, 54, 0.3);
 }
 
@@ -711,7 +760,6 @@ a {
 .features-controls label {
   cursor: pointer;
 }
-
 
 .features-text {
   margin-left: 33px;
