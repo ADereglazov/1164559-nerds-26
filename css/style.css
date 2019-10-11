@@ -727,45 +727,35 @@ a {
   height: 18px;
   border: 4px solid white;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 4px rgba(77, 77, 77, 0.3);
   cursor: pointer;
 }
 
-.grid-input1:checked + .grid-label-1,
-.grid-input2:checked + .grid-label-2,
-.grid-input3:checked + .grid-label-3 {
-  background-color: #b8b8b8;
+.grid-input:checked + .grid-label {
+  background-color: rgba(77, 77, 77, 0.3);
 }
 
-.grid-input1:disabled + .grid-label-1,
-.grid-input2:disabled + .grid-label-2,
-.grid-input3:disabled + .grid-label-3 {
+.grid-input:disabled + .grid-label {
   cursor: default;
-  color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+  color: rgba(40, 49, 54, 0.1);
+  box-shadow: 0 0 0 4px rgba(77, 77, 77, 0.1);
 }
 
-.grid-input1:disabled + .grid-label-1 .grid-text,
-.grid-input2:disabled + .grid-label-2 .grid-text,
-.grid-input3:disabled + .grid-label-3 .grid-text {
+.grid-input:disabled + .grid-label .grid-text {
   text-shadow: 0 -7px 0 rgba(40, 49, 54, 0.3);
 }
 
-.grid-input1:checked + .grid-label-1:hover,
-.grid-input2:checked + .grid-label-2:hover,
-.grid-input3:checked + .grid-label-3:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+.grid-input:checked + .grid-label:hover {
+  background-color: rgba(77, 77, 77, 0.7);
 }
 
-.grid-input1:focus + .grid-label-1,
-.grid-input2:focus + .grid-label-2,
-.grid-input3:focus + .grid-label-3 {
-  background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.7);
+.grid-input:focus + .grid-label {
+  background-color: rgba(77, 77, 77, 0.7);
+  box-shadow: 0 0 0 4px rgba(77, 77, 77, 0.7);
 }
 
 .grid-controls label:hover {
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 0 4px rgba(77, 77, 77, 0.7);
 }
 
 .features-fields {
@@ -790,37 +780,43 @@ a {
   color: #283136;
 }
 
-.features-input1:not(checked) + .features-label-1,
-.features-input2:not(checked) + .features-label-2,
-.features-input3:not(checked) + .features-label-3,
-.features-input4:not(checked) + .features-label-4,
-.features-input5:not(checked) + .features-label-5 {
+.features-custom-box {
+  position: absolute;
+  width: 26px;
+  height: 23px;
+}
+
+.features-input:not(checked) + .features-label .features-custom-box {
   background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 0.7;
 }
 
-.features-input1:checked + .features-label-1,
-.features-input2:checked + .features-label-2,
-.features-input3:checked + .features-label-3,
-.features-input4:checked + .features-label-4,
-.features-input5:checked + .features-label-5 {
+.features-input:checked + .features-label .features-custom-box {
   background: url("../img/checkbox-on.svg") no-repeat;
   opacity: 0.7;
 }
 
-.features-input1 + .features-label-1:hover,
-.features-input2 + .features-label-2:hover,
-.features-input3 + .features-label-3:hover,
-.features-input4 + .features-label-4:hover,
-.features-input5 + .features-label-5:hover {
+.features-input:not(checked):not(disabled):hover + .features-label .features-custom-box {
+  background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 1;
 }
 
-.features-input1:disabled + .features-label-1,
-.features-input2:disabled + .features-label-2,
-.features-input3:disabled + .features-label-3,
-.features-input4:disabled + .features-label-4,
-.features-input5:disabled + .features-label-5 {
+.features-input:checked:not(disabled):hover + .features-label .features-custom-box {
+  background: url("../img/checkbox-on.svg") no-repeat;
+  opacity: 1;
+}
+
+.features-input:not(checked):focus + .features-label .features-custom-box {
+  background: url("../img/checkbox-off.svg") no-repeat;
+  opacity: 1;
+}
+
+.features-input:checked:focus + .features-label .features-custom-box {
+  background: url("../img/checkbox-on.svg") no-repeat;
+  opacity: 1;
+}
+
+.features-input:disabled + .features-label {
   opacity: 0.3;
   cursor: default;
 }
