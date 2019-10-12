@@ -715,7 +715,7 @@ a {
   text-shadow: 0 -7px 0 rgba(40, 49, 54, 1);
 }
 
-.grid-controls label {
+.grid-label {
   display: inline-block;
   margin: 0;
   width: 18px;
@@ -726,13 +726,19 @@ a {
   cursor: pointer;
 }
 
-.grid-input:checked + .grid-label {
+.grid-input:checked:not(:disabled) + .grid-label {
   background-color: rgba(77, 77, 77, 0.7);
 }
 
-.grid-input:disabled + .grid-label {
+.grid-input:disabled:not(:checked) + .grid-label {
   cursor: default;
   color: rgba(40, 49, 54, 0.1);
+  box-shadow: 0 0 0 4px rgba(77, 77, 77, 0.1);
+}
+
+.grid-input:disabled:checked + .grid-label {
+  cursor: default;
+  background-color: rgba(77, 77, 77, 0.1);
   box-shadow: 0 0 0 4px rgba(77, 77, 77, 0.1);
 }
 
@@ -740,16 +746,16 @@ a {
   text-shadow: 0 -7px 0 rgba(40, 49, 54, 0.3);
 }
 
-.grid-input:checked + .grid-label:hover {
+.grid-input:checked:not(:disabled) + .grid-label:hover {
   background-color: rgba(77, 77, 77, 1);
 }
 
-.grid-input:focus + .grid-label {
-  background-color: rgba(77, 77, 77, 1);
+.grid-label:hover {
   box-shadow: 0 0 0 4px rgba(77, 77, 77, 1);
 }
 
-.grid-controls label:hover {
+.grid-input:focus:checked + .grid-label {
+  background-color: rgba(77, 77, 77, 1);
   box-shadow: 0 0 0 4px rgba(77, 77, 77, 1);
 }
 
