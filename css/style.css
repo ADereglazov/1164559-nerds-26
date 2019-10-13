@@ -166,7 +166,9 @@ a {
   background-color: #eeeeee;
 }
 
-.slide1, .slide2, .slide3 {
+.slide1,
+.slide2,
+.slide3 {
   display: none;
   position: relative;
   height: 430px;
@@ -181,7 +183,9 @@ a {
   margin-bottom: auto;
 }
 
-.slide1-img, .slide2-img, .slide3-img {
+.slide1-img,
+.slide2-img,
+.slide3-img {
   margin-top: auto;
 }
 
@@ -266,23 +270,19 @@ a {
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: inherit;
-  border: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 50%;
+}
+
+.slider-radio1:checked ~ .slider-controls .slider-controls-item-1::before,
+.slider-radio2:checked ~ .slider-controls .slider-controls-item-2::before,
+.slider-radio3:checked ~ .slider-controls .slider-controls-item-3::before {
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .slider-radio1:focus ~ .slider-controls .slider-controls-item-1::before,
 .slider-radio2:focus ~ .slider-controls .slider-controls-item-2::before,
 .slider-radio3:focus ~ .slider-controls .slider-controls-item-3::before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: inherit;
   border: 2px solid rgba(0, 0, 0, 1);
-  border-radius: 50%;
 }
 
 .slider-controls label:nth-child(2) {
@@ -787,32 +787,32 @@ a {
   height: 26px;
 }
 
-.features-input:not(:checked) + .features-label .features-custom-box {
+.features-input:not(:checked) + .features-custom-box {
   background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 0.7;
 }
 
-.features-input:checked + .features-label .features-custom-box {
+.features-input:checked + .features-custom-box {
   background: url("../img/checkbox-on.svg") no-repeat;
   opacity: 0.7;
 }
 
-.features-input:not(:checked):hover + .features-label .features-custom-box {
+.features-input:not(:checked):hover + .features-custom-box {
   background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 1;
 }
 
-.features-input:checked:hover + .features-label .features-custom-box {
+.features-input:checked:hover + .features-custom-box {
   background: url("../img/checkbox-on.svg") no-repeat;
   opacity: 1;
 }
 
-.features-input:not(:checked):focus + .features-label .features-custom-box {
+.features-input:not(:checked):focus + .features-custom-box {
   background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 1;
 }
 
-.features-input:checked:focus + .features-label .features-custom-box {
+.features-input:checked:focus + .features-custom-box {
   background: url("../img/checkbox-on.svg") no-repeat;
   opacity: 1;
 }
@@ -822,7 +822,7 @@ a {
   cursor: default;
 }
 
-.features-input:disabled:hover + .features-label .features-custom-box {
+.features-input:disabled:hover + .features-custom-box {
   opacity: 0.7;
 }
 
