@@ -789,43 +789,48 @@ a {
   height: 26px;
 }
 
-.features-input:not(:checked) + .features-custom-box {
+.features-input:not(:checked) + .features-label .features-custom-box {
   background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 0.7;
 }
 
-.features-input:checked + .features-custom-box {
+.features-input:checked + .features-label .features-custom-box {
   background: url("../img/checkbox-on.svg") no-repeat;
   opacity: 0.7;
 }
 
-.features-input:not(:checked):hover + .features-custom-box {
+.features-input:not(:checked):hover + .features-label .features-custom-box {
   background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 1;
 }
 
-.features-input:checked:hover + .features-custom-box {
+.features-input:checked:hover + .features-label .features-custom-box {
   background: url("../img/checkbox-on.svg") no-repeat;
   opacity: 1;
 }
 
-.features-input:not(:checked):focus + .features-custom-box {
+.features-input:not(:checked):focus + .features-label .features-custom-box {
   background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 1;
 }
 
-.features-input:checked:focus + .features-custom-box {
+.features-input:checked:focus + .features-label .features-custom-box {
   background: url("../img/checkbox-on.svg") no-repeat;
   opacity: 1;
 }
 
-.features-input:disabled + .features-label {
+.features-input:disabled + .features-label .features-custom-box,
+.features-input:disabled:hover + .features-label .features-custom-box {
   opacity: 0.3;
   cursor: default;
 }
 
-.features-input:disabled:hover + .features-custom-box {
-  opacity: 0.7;
+.features-input:disabled + .features-label,
+.features-input:disabled:hover + .features-label,
+.features-input:disabled + .features-label .features-text,
+.features-input:disabled:hover + .features-label .features-text {
+  color: rgba(77, 77, 77, 0.3);
+  cursor: default;
 }
 
 .sort-section {
