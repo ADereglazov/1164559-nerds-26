@@ -826,11 +826,13 @@ a {
 }
 
 .features-input:disabled + .features-label,
-.features-input:disabled:hover + .features-label,
+.features-input:disabled:hover + .features-label {
+  cursor: default;
+}
+
 .features-input:disabled + .features-label .features-text,
 .features-input:disabled:hover + .features-label .features-text {
   color: rgba(77, 77, 77, 0.3);
-  cursor: default;
 }
 
 .sort-section {
