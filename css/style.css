@@ -308,7 +308,7 @@ a {
 .propositions {
   display: flex;
   height: 347px;
-  margin: 80px 60px 80px 0;
+  margin: 78px 60px 80px 0;
   justify-content: space-between;
 }
 
@@ -390,8 +390,8 @@ a {
 .work-block {
   display: flex;
   justify-content: space-between;
-  height: 485px;
-  margin-top: 40px;
+  margin-top: 38px;
+  margin-bottom: 62px;
 }
 
 .adv-head {
@@ -427,7 +427,7 @@ a {
   margin-right: 11px;
 }
 .work-list li {
-  line-height: 46px;
+  line-height: 48px;
 }
 
 .methods table {
@@ -452,7 +452,7 @@ a {
   font-weight: bold;
   color: #000000;
   line-height: 45px;
-  height: 93px;
+  height: 92px;
   vertical-align: bottom;
 }
 
@@ -462,7 +462,7 @@ a {
 }
 
 .methods-text td {
-  padding-top: 16px;
+  padding-top: 20px;
 }
 
 .partners {
@@ -497,7 +497,7 @@ a {
 .footer-items {
   display: flex;
   align-items: center;
-  padding-top: 69px;
+  padding-top: 58px;
 }
 
 .social-list {
@@ -538,13 +538,14 @@ a {
   font-weight: bold;
   line-height: 36px;
   color: #000000;
-  margin: 0 0 0 139px;
+  margin: 0 0 0 140px;
+  padding-top: 8px;
+  padding-bottom: 2px;
 }
 
 .discount {
   font-size: 16px;
   font-weight: normal;
-  line-height: 22px;
   color: #444444;
 }
 
@@ -569,7 +570,8 @@ a {
 .catalog-body {
   display: flex;
   justify-content: space-between;
-  margin: 60px 0;
+  margin-top: 55px;
+  margin-bottom: 60px;
 }
 
 .catalog-section {
@@ -1025,7 +1027,7 @@ a {
   width: 319px;
   height: 308px;
   text-align: left;
-  padding: 54px 50px 47px 50px;
+  padding: 50px 50px 47px 50px;
   top: 54px;
   left: 20px;
   background-color: #ffffff;
