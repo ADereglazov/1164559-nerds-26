@@ -657,7 +657,7 @@ a {
   display: flex;
   justify-content: space-between;
   line-height: 34px;
-  margin-bottom: 60px;
+  margin-bottom: 62px;
 }
 
 .catalog-prices label {
@@ -675,7 +675,7 @@ a {
 }
 
 .filters {
-  padding-top: 8px;
+  padding-top: 6px;
   width: 260px;
 }
 
