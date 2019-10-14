@@ -178,5 +178,72 @@
       </div>
     </form>
   </section>
+  <script>
+    var link = document.querySelector(".writeus-button");
+    var popup = document.querySelector(".writeus");
+    var close = document.querySelector(".writeus-close");
+    var formPopup = popup.querySelector("form");
+    var nameField = document.querySelector("[name=name]");
+    var emailField = document.querySelector("[name=email]");
+    var letterField = document.querySelector("[name=letter]");
+    var storageName = "";
+    var storageEmail = "";
+    var isStorageSupport = true;
+
+    try {
+      storageName = localStorage.getItem("nameField");
+      storageEmail = localStorage.getItem("emailField");
+    } catch (err) {
+      isStorageSupport = false;
+    }
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("writeus-show");
+
+      if (storageName) {
+        nameField.value = storageName;
+        if (storageEmail) {
+          emailField.value = storageEmail;
+          letterField.focus();
+        }
+        else {
+          emailField.focus();
+        }
+      }
+      else {
+        nameField.focus();
+      }
+    });
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("writeus-show");
+    });
+    
+    formPopup.addEventListener("submit", function (evt) {
+      if (!nameField.value || !emailField.value || !letterField.value) {
+        evt.preventDefault();
+        popup.classList.add("writeus-error");
+      }
+      else {
+        if (isStorageSupport) {
+          localStorage.setItem("nameField", nameField.value);
+          localStorage.setItem("emailField", emailField.value);
+        }
+      }
+    });
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.key === "Escape") {
+        if (popup.classList.contains("writeus-show")) {
+          evt.preventDefault();
+          popup.classList.remove("writeus-show");
+          popup.classList.remove("writeus-error");
+        }
+      }
+    })
+
+  </script>
 </body>
 </html>
