@@ -1098,7 +1098,7 @@ a {
 .writeus {
   display: none;
   position: fixed;
-  bottom: 180px;
+  top: 100px;
   left: 50%;
   min-width: 960px;
   min-height: 590px;

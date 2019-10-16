@@ -25,21 +25,19 @@ letterField.required = false;
 writeusLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("writeus-show");
-debugger;
+
   if (!nameField.value) {
     nameField.focus();
     return;
   }
 
   nameField.value = storageName;
-
   if (!emailField.value) {
     emailField.focus();
     return;
   }
 
   emailField.value = storageEmail;
-
   if (!letterField.value) {
     letterField.focus();
     return;
