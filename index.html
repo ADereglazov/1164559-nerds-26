@@ -134,7 +134,7 @@
             ул. Б. Конюшенная, д. 19/8
           </address>
           <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <a class="writeus-button" href="mailto:nowhere@mozilla.org">Напишите нам</a>
+          <a class="writeus-button" href="writeus.html">Напишите нам</a>
         </section>
       </div>
       <img src="img/map-m.png" alt="Схема проезда" width="1440" height="416">
@@ -163,87 +163,21 @@
         <div class="writeus-short-fields">
           <div class="writeus-label-field">
             <label for="name-field" class="writeus-name-label">Ваше имя:</label>
-            <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required class="writeus-name-field">
+            <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" class="writeus-name-field js-popup-name" required>
           </div>
           <div class="writeus-label-field">
             <label for="email-field" class="writeus-email-label">Ваш e-mail:</label>
-            <input type="email" name="email" id="email-field" placeholder="email@example.com" required class="writeus-email-field">
+            <input type="email" name="email" id="email-field" placeholder="email@example.com" class="writeus-email-field js-popup-email" required>
           </div>
         </div>
         <div class="writeus-label-field">
           <label for="letter-field" class="writeus-text-label">Текст письма:</label>
-          <textarea name="letter" id="letter-field" placeholder="В свободной форме" required class="writeus-textarea"></textarea>
+          <textarea name="letter" id="letter-field" placeholder="В свободной форме" class="writeus-textarea js-popup-textarea" required></textarea>
         </div>
-        <button type="submit" class="writeus-send">Отправить</button>
+        <button type="submit" class="writeus-send js-popup-submitButton">Отправить</button>
       </div>
     </form>
   </section>
-  <script>
-    var link = document.querySelector(".writeus-button");
-    var popup = document.querySelector(".writeus");
-    var close = document.querySelector(".writeus-close");
-    var formPopup = popup.querySelector("form");
-    var nameField = document.querySelector("[name=name]");
-    var emailField = document.querySelector("[name=email]");
-    var letterField = document.querySelector("[name=letter]");
-    var storageName = "";
-    var storageEmail = "";
-    var isStorageSupport = true;
-
-    try {
-      storageName = localStorage.getItem("nameField");
-      storageEmail = localStorage.getItem("emailField");
-    } catch (err) {
-      isStorageSupport = false;
-    }
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("writeus-show");
-
-      if (storageName) {
-        nameField.value = storageName;
-        if (storageEmail) {
-          emailField.value = storageEmail;
-          letterField.focus();
-        }
-        else {
-          emailField.focus();
-        }
-      }
-      else {
-        nameField.focus();
-      }
-    });
-
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("writeus-show");
-    });
-    
-    formPopup.addEventListener("submit", function (evt) {
-      if (!nameField.value || !emailField.value || !letterField.value) {
-        evt.preventDefault();
-        popup.classList.add("writeus-error");
-      }
-      else {
-        if (isStorageSupport) {
-          localStorage.setItem("nameField", nameField.value);
-          localStorage.setItem("emailField", emailField.value);
-        }
-      }
-    });
-
-    window.addEventListener("keydown", function (evt) {
-      if (evt.key === "Escape") {
-        if (popup.classList.contains("writeus-show")) {
-          evt.preventDefault();
-          popup.classList.remove("writeus-show");
-          popup.classList.remove("writeus-error");
-        }
-      }
-    })
-
-  </script>
+  <script src="js/popup.js"></script>
 </body>
 </html>
