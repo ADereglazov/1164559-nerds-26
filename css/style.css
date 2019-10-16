@@ -1094,7 +1094,7 @@ a {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7363b;
 }
-/* ---------------- POPUP ------------------ */
+
 .writeus {
   display: none;
   position: fixed;
@@ -1108,10 +1108,18 @@ a {
 }
 
 @keyframes bounce {
-  0% { transform: translateY(-2000px); }
-  70% { transform: translateY(30px); }
-  90% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .writeus-show {
@@ -1122,9 +1130,23 @@ a {
 }
 
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-  20%, 40%, 60%, 80% { transform: translateX(10px); }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 .writeus-error {
