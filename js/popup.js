@@ -1,6 +1,6 @@
-var link = document.querySelector(".writeus-button");
+var writeusLink = document.querySelector(".writeus-button");
 var popup = document.querySelector(".writeus");
-var close = popup.querySelector(".writeus-close");
+var popupClose = popup.querySelector(".writeus-close");
 var formPopup = popup.querySelector("form");
 var nameField = formPopup.querySelector(".js-popup-name");
 var emailField = formPopup.querySelector(".js-popup-email");
@@ -22,18 +22,18 @@ nameField.required = false;
 emailField.required = false;
 letterField.required = false;
 
-link.addEventListener("click", function (evt) {
+writeusLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("writeus-show");
-
-  if (!storageName) {
+debugger;
+  if (!nameField.value) {
     nameField.focus();
     return;
   }
 
   nameField.value = storageName;
 
-  if (!storageEmail) {
+  if (!emailField.value) {
     emailField.focus();
     return;
   }
@@ -57,12 +57,13 @@ formPopup.addEventListener("submit", function (evt) {
     popup.classList.add("writeus-error");
 
     storageName = nameField.value;
+    storageEmail = emailField.value;
+
     if (!storageName) {
       nameField.focus();
       return;
     }
 
-    storageEmail = emailField.value;
     if (!storageEmail) {
       emailField.focus();
       return;
@@ -79,7 +80,7 @@ formPopup.addEventListener("submit", function (evt) {
   }
 });
 
-close.addEventListener("click", function (evt) {
+popupClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("writeus-show");
   popup.classList.remove("writeus-error");
