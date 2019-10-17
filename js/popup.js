@@ -26,25 +26,24 @@ writeusLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("writeus-show");
 
-  if (!nameField.value) {
+  if (!storageName) {
     nameField.focus();
     return;
   }
-
   nameField.value = storageName;
-  if (!emailField.value) {
+
+  if (!storageEmail) {
     emailField.focus();
     return;
   }
-
   emailField.value = storageEmail;
+
   if (!letterField.value) {
     letterField.focus();
     return;
   }
 
   popupSubmitButton.focus();
-
 });
 
 formPopup.addEventListener("submit", function (evt) {
@@ -54,22 +53,18 @@ formPopup.addEventListener("submit", function (evt) {
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("writeus-error");
 
-    storageName = nameField.value;
-    storageEmail = emailField.value;
-
-    if (!storageName) {
+    if (!nameField.value) {
       nameField.focus();
       return;
     }
 
-    if (!storageEmail) {
+    if (!emailField.value) {
       emailField.focus();
       return;
     }
 
     letterField.focus();
   }
-
   else {
     if (isStorageSupport) {
       localStorage.setItem("nameField", nameField.value);
