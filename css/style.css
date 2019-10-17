@@ -61,8 +61,8 @@ a {
 }
 
 .visually-hidden:not(:focus):not(:active),
-  input[type="radio"].visually-hidden,
-  input[type="checkbox"].visually-hidden {
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -97,27 +97,27 @@ a {
 
 .main-navigation {
   display: flex;
-  margin-top: auto;
   align-items: center;
-  text-transform: uppercase;
   font-weight: 500;
+  text-transform: uppercase;
+  margin-top: auto;
 }
 
 .site-navigation {
   display: flex;
-  width: 438px;
   justify-content: space-between;
+  width: 438px;
   margin-top: 12px;
 }
 
 .header-logo {
-  margin-right: 202px;
   line-height: normal;
+  margin-right: 202px;
 }
 
 .index-link {
-  pointer-events: none;
   cursor: default;
+  pointer-events: none;
 }
 
 .header-logo:hover {
@@ -155,10 +155,10 @@ a {
 }
 
 .current-link {
-  pointer-events: none;
   cursor: default;
-  border-bottom: 2px solid #ff525b;
+  pointer-events: none;
   padding-bottom: 5px;
+  border-bottom: 2px solid #ff525b;
 }
 
 .slides-block {
@@ -217,6 +217,7 @@ a {
 
 .slide-button {
   display: inline-block;
+  vertical-align: middle;
   width: 240px;
   line-height: 50px;
   font-weight: 500;
@@ -239,6 +240,7 @@ a {
 
 .slider-controls {
   display: inline-block;
+  vertical-align: middle;
   position: absolute;
   width: 88px;
   height: 18px;
@@ -252,6 +254,7 @@ a {
 .slider-controls-item {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 18px;
   height: 18px;
   background-color: #ffffff;
@@ -307,9 +310,9 @@ a {
 
 .propositions {
   display: flex;
+  justify-content: space-between;
   height: 347px;
   margin: 78px 60px 80px 0;
-  justify-content: space-between;
 }
 
 .propositions-items {
@@ -323,10 +326,10 @@ a {
 
 .propositions-head {
   font-size: 24px;
-  margin-top: 26px;
-  margin-bottom: 22px;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 26px;
+  margin-bottom: 22px;
 }
 
 .propositions-text {
@@ -335,6 +338,7 @@ a {
 
 .order-button {
   display: inline-block;
+  vertical-align: middle;
   width: 160px;
   line-height: 50px;
   font-weight: 500;
@@ -403,6 +407,10 @@ a {
   margin-bottom: 31px;
 }
 
+.adv-head p {
+  margin: 0;
+}
+
 .adv-txt {
   padding: 0;
   margin: 0;
@@ -420,9 +428,9 @@ a {
 .work-list li::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 25px;
   height: 2px;
-  vertical-align: middle;
   background-color: #fb565a;
   margin-right: 11px;
 }
@@ -430,13 +438,19 @@ a {
   line-height: 48px;
 }
 
+.methods {
+  width: 360px;
+}
+
 .methods table {
   width: 100%;
+  table-layout: fixed;
   border-spacing: 0;
   margin-top: 33px;
 }
 
 .methods-table td {
+  width: 100%;
   padding: 0;
 }
 
@@ -450,10 +464,15 @@ a {
 .percent {
   font-size: 45px;
   font-weight: bold;
-  color: #000000;
   line-height: 45px;
   height: 92px;
   vertical-align: bottom;
+  color: #000000;
+}
+
+.percent sup {
+  top: -0.6em;
+  font-size: 60%;
 }
 
 .methods-text {
@@ -466,6 +485,7 @@ a {
 }
 
 .partners {
+  position: relative;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
   margin-bottom: 80px;
@@ -473,9 +493,34 @@ a {
 
 .partners-list {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   height: 180px;
+}
+
+.partners-list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 602px;
+  height: 52px;
+  border-left: 2px solid #eeeeee;
+  border-right: 2px solid #eeeeee;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.partners-list::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eeeeee;
 }
 
 .partners-list img {
@@ -502,8 +547,8 @@ a {
 
 .social-list {
   display: flex;
-  width: 260px;
   justify-content: space-between;
+  width: 260px;
 }
 
 .social-link {
@@ -534,13 +579,15 @@ a {
 }
 
 .invite {
+  display: flex;
+  flex-direction: column;
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
   color: #000000;
-  margin: 0 0 0 140px;
   padding-top: 8px;
   padding-bottom: 2px;
+  margin: 0 0 0 140px;
 }
 
 .discount {
@@ -560,10 +607,10 @@ a {
 
 .map-interactive {
   position: absolute;
-  top: 0;
-  width: 100%;
   min-width: 1440px;
+  width: 100%;
   height: 416px;
+  top: 0;
   z-index: 2;
 }
 
@@ -581,9 +628,9 @@ a {
   font-size: 55px;
   text-align: center;
   line-height: 55px;
-  margin: 0;
-  padding: 75px 0 108px 0;
   background-color: #eeeeee;
+  padding: 75px 0 108px 0;
+  margin: 0;
 }
 
 .catalog-body {
@@ -628,14 +675,14 @@ a {
 
 .range-controls {
   display: block;
-  box-sizing: initial;
+  box-sizing: content-box;
   position: relative;
   height: 41px;
-  margin-top: 55px;
-  margin-bottom: 15px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
+  margin-top: 55px;
+  margin-bottom: 15px;
   background-color: #f1f1f1;
   border-radius: 3px;
 }
@@ -685,23 +732,23 @@ a {
 
 .catalog-prices input {
   width: 80px;
+  text-align: center;
   padding: 8px;
-  margin-left: 10px;
   border: none;
   border-radius: 3px;
+  margin-left: 10px;
   background-color: #eeeeee;
-  text-align: center;
 }
 
 .filters {
-  padding-top: 6px;
   width: 260px;
+  padding-top: 6px;
 }
 
 .filters fieldset {
   padding: 0;
-  margin: 0;
   border: none;
+  margin: 0;
 }
 
 .filters-form legend,
@@ -738,11 +785,12 @@ a {
 
 .grid-label {
   display: inline-block;
-  margin: 0;
+  vertical-align: middle;
   width: 18px;
   height: 18px;
   border: 4px solid white;
   border-radius: 50%;
+  margin: 0;
   box-shadow: 0 0 0 4px rgba(77, 77, 77, 0.7);
   cursor: pointer;
 }
@@ -875,8 +923,8 @@ a {
   margin-right: 27px;
 }
 .sort-list li:nth-last-child(2) {
-  margin-left: 45px;
   margin-right: 18px;
+  margin-left: 45px;
 }
 
 .sort-list a {
@@ -904,16 +952,21 @@ a {
   opacity: 1;
 }
 
+.sort-list .current-item,
+.sort-list .current-item:hover {
+  color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  cursor: default;
+}
+
 .show-button {
   width: 260px;
   height: 50px;
   padding: 0;
-
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
-
   background-color: #eeeeee;
   border: none;
   border-radius: 3px;
@@ -948,10 +1001,11 @@ a {
 .catalog-popup {
   position: absolute;
   width: 100%;
-  height: 231px;
+  height: 230px;
   bottom: 0;
   text-align: center;
   background-color: #eeeeee;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.25);
   visibility: hidden;
 }
 
@@ -973,18 +1027,20 @@ a {
 
 .catalog-popup p {
   line-height: 18px;
-  margin-bottom: 28px;
   color: #666666;
+  margin: 0;
 }
 
 .price-button {
   display: inline-block;
+  vertical-align: middle;
   width: 200px;
   line-height: 50px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #fb565a;
   border-radius: 3px;
+  margin-top: 28px;
 }
 
 .price-button:hover {
@@ -997,7 +1053,7 @@ a {
   background-color: #d7363b;
 }
 
-.breadcrambs {
+.pagination {
   width: 443px;
 }
 
@@ -1009,6 +1065,7 @@ a {
 
 .catalog-navigation a {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   line-height: 50px;
   font-weight: 500;
@@ -1050,14 +1107,14 @@ a {
 .contact-info {
   display: block;
   position: absolute;
-  z-index: 3;
-  width: 319px;
+  width: 320px;
   height: 308px;
   text-align: left;
   padding: 50px 50px 47px 50px;
+  background-color: #ffffff;
   top: 54px;
   left: 20px;
-  background-color: #ffffff;
+  z-index: 3;
 }
 
 .company {
@@ -1077,10 +1134,12 @@ a {
 
 .address {
   margin-bottom: 14px;
+  padding-right: 10px;
 }
 
 .writeus-button {
   display: inline-block;
+  vertical-align: middle;
   width: 220px;
   line-height: 50px;
   text-align: center;
@@ -1115,7 +1174,7 @@ a {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translateY(-200%);
   }
   70% {
     transform: translateY(30px);
@@ -1169,11 +1228,11 @@ a {
 
 .writeus-close {
   position: absolute;
-  top: 78px;
-  right: 90px;
   padding: 0;
   border: none;
   background-color: transparent;
+  top: 78px;
+  right: 90px;
   opacity: 0.5;
 }
 
@@ -1222,9 +1281,9 @@ a {
   line-height: 18px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 8px;
   border: 2px solid #d7dbdc;
   border-radius: 2px;
+  margin-top: 8px;
 }
 
 .writeus-name-field,
@@ -1243,12 +1302,12 @@ a {
 .writeus-send {
   width: 260px;
   height: 50px;
-  padding: 0;
   font-size: inherit;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
   background-color: #fb565a;
+  padding: 0;
   border: none;
   border-radius: 3px;
 }
@@ -1261,9 +1320,9 @@ a {
 .writeus-send:active {
   cursor: pointer;
   outline: none;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #d7363b;
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .writeus-name-field:hover,
