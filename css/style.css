@@ -91,7 +91,7 @@ input[type="checkbox"].visually-hidden {
 
 .main-header {
   display: flex;
-  height: 115px;
+  padding-top: 115px;
   background-color: #eeeeee;
 }
 
@@ -106,6 +106,7 @@ input[type="checkbox"].visually-hidden {
 .site-navigation {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 438px;
   margin-top: 12px;
 }
@@ -130,6 +131,7 @@ input[type="checkbox"].visually-hidden {
 
 .cart-navigation {
   display: flex;
+  flex-wrap: wrap;
   width: 116px;
   margin-top: 12px;
   margin-left: auto;
@@ -171,22 +173,22 @@ input[type="checkbox"].visually-hidden {
 .slide3 {
   display: none;
   position: relative;
-  height: 430px;
 }
 
 .slides-text {
   display: flex;
   flex-direction: column;
   width: 645px;
-  height: 270px;
   margin-top: 75px;
-  margin-bottom: auto;
+  margin-bottom: 80px;
 }
 
 .slide1-img,
 .slide2-img,
 .slide3-img {
-  margin-top: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .slide1-img {
@@ -245,7 +247,7 @@ input[type="checkbox"].visually-hidden {
   width: 88px;
   height: 18px;
   font-size: 0;
-  bottom: 96px;
+  bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -312,7 +314,7 @@ input[type="checkbox"].visually-hidden {
   display: flex;
   justify-content: space-between;
   height: 347px;
-  margin: 78px 60px 80px 0;
+  margin: 80px 60px 80px 0;
 }
 
 .propositions-items {
@@ -602,13 +604,13 @@ input[type="checkbox"].visually-hidden {
 }
 
 .map {
-  width: 1440px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 .map-interactive {
   position: absolute;
-  min-width: 1440px;
+  min-width: 1200px;
   width: 100%;
   height: 416px;
   top: 0;
