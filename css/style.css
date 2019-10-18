@@ -315,8 +315,7 @@ input[type="checkbox"].visually-hidden {
 .propositions {
   display: flex;
   justify-content: space-between;
-  height: 347px;
-  margin: 80px 60px 80px 0;
+  margin: 78px 60px 80px 0;
 }
 
 .propositions-items {
@@ -350,7 +349,7 @@ input[type="checkbox"].visually-hidden {
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 3px;
-  margin-top: auto;
+  margin-top: 30px;
 }
 
 .order-button1 {
@@ -400,6 +399,10 @@ input[type="checkbox"].visually-hidden {
   justify-content: space-between;
   margin-top: 38px;
   margin-bottom: 62px;
+}
+
+.work-section-text {
+  width: 650px;
 }
 
 .adv-head {
@@ -1119,7 +1122,7 @@ input[type="checkbox"].visually-hidden {
   display: block;
   position: absolute;
   width: 320px;
-  height: 308px;
+  max-height: 416px;
   text-align: left;
   padding: 50px 50px 47px 50px;
   background-color: #ffffff;
@@ -1144,6 +1147,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .address {
+  max-height: 90px;
+  overflow: auto;
   margin-bottom: 14px;
   padding-right: 10px;
 }
