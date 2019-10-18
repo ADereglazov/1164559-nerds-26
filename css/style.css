@@ -505,28 +505,19 @@ input[type="checkbox"].visually-hidden {
   height: 180px;
 }
 
-.partners-list::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 602px;
-  height: 52px;
-  border-left: 2px solid #eeeeee;
-  border-right: 2px solid #eeeeee;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.partners-list li + li {
+  position: relative;
 }
 
-.partners-list::after {
+.partners-list li + li::before {
   content: "";
   display: block;
   position: absolute;
   width: 2px;
   height: 52px;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: -22px;
+  transform: translateY(-50%);
   background-color: #eeeeee;
 }
 
@@ -534,7 +525,8 @@ input[type="checkbox"].visually-hidden {
   opacity: 0.2;
 }
 
-.partners-list img:hover {
+.partners-list img:hover,
+.partners-list a:focus > img {
   opacity: 1;
 }
 
@@ -1190,7 +1182,7 @@ input[type="checkbox"].visually-hidden {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-200%);
+    transform: translateY(-100%);
   }
   70% {
     transform: translateY(30px);
