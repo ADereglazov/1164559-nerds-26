@@ -113,7 +113,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .header-logo {
-  line-height: normal;
+  display: block;
+  line-height: 0;
   margin-right: 202px;
 }
 
@@ -160,7 +161,7 @@ input[type="checkbox"].visually-hidden {
 .current-link {
   cursor: default;
   pointer-events: none;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   border-bottom: 2px solid #ff525b;
 }
 
@@ -315,14 +316,16 @@ input[type="checkbox"].visually-hidden {
 
 .propositions {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin: 78px 60px 80px 0;
+  margin: 78px 60px 60px 0;
 }
 
 .propositions-items {
   display: flex;
   flex-direction: column;
   width: 300px;
+  margin-bottom: 20px;
 }
 
 .propositions-items img {
@@ -400,7 +403,7 @@ input[type="checkbox"].visually-hidden {
   display: flex;
   justify-content: space-between;
   margin-top: 38px;
-  margin-bottom: 62px;
+  margin-bottom: 74px;
 }
 
 .work-section-text {
@@ -413,7 +416,7 @@ input[type="checkbox"].visually-hidden {
   line-height: 45px;
   color: #000000;
   margin-top: 35px;
-  margin-bottom: 31px;
+  margin-bottom: 34px;
 }
 
 .adv-txt {
@@ -426,21 +429,30 @@ input[type="checkbox"].visually-hidden {
   line-height: 16px;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 46px;
+  margin-top: 43px;
+  margin-bottom: 28px;
 
 }
 
 .work-list li::before {
   content: "";
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 25px;
   height: 2px;
   background-color: #fb565a;
-  margin-right: 11px;
 }
+
+.work-list li + li {
+  margin-top: 24px;
+}
+
 .work-list li {
-  line-height: 48px;
+  position: relative;
+  padding-left: 36px;
 }
 
 .methods {
@@ -451,7 +463,7 @@ input[type="checkbox"].visually-hidden {
   width: 100%;
   table-layout: fixed;
   border-spacing: 0;
-  margin-top: 33px;
+  margin-top: 34px;
 }
 
 .methods-table td {
@@ -608,6 +620,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .map {
+  font-size: 0;
+  line-height: 0;
   width: 1200px;
   margin: 0 auto;
 }
@@ -967,6 +981,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .show-button {
+  display: block;
   width: 260px;
   height: 50px;
   padding: 0;
@@ -1011,9 +1026,10 @@ input[type="checkbox"].visually-hidden {
   height: auto;
   bottom: 0;
   text-align: center;
+  padding: 0 10px;
   background-color: #eeeeee;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.25);
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .catalog-popup h3 {
@@ -1183,7 +1199,10 @@ input[type="checkbox"].visually-hidden {
   left: 50%;
   min-width: 960px;
   min-height: 590px;
+  max-width: 960px;
+  max-height: 590px;
   margin-left: -480px;
+  overflow: auto;
   background-color: #ffffff;
   box-shadow: 0 20px 20px 20px rgba(0, 0, 0, 0.25);
 }
@@ -1239,11 +1258,14 @@ input[type="checkbox"].visually-hidden {
   font-size: 45px;
   line-height: 45px;
   margin-top: 68px;
+  margin-right: 120px;
   margin-left: 100px;
 }
 
 .writeus-close {
+  display: block;
   position: absolute;
+  font-size: 0;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -1316,6 +1338,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .writeus-send {
+  display: block;
   width: 260px;
   height: 50px;
   font-size: inherit;
@@ -1324,6 +1347,7 @@ input[type="checkbox"].visually-hidden {
   color: #ffffff;
   background-color: #fb565a;
   padding: 0;
+  margin-bottom: 45px;
   border: none;
   border-radius: 3px;
 }
