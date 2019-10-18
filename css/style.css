@@ -183,6 +183,7 @@ input[type="checkbox"].visually-hidden {
   width: 645px;
   margin-top: 75px;
   margin-bottom: 80px;
+  z-index: 1; /* Чтобы текст в случае переполнения лежал поверх картинки */
 }
 
 .slide1-img,
@@ -321,6 +322,7 @@ input[type="checkbox"].visually-hidden {
 .propositions-items {
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 
 .propositions-items img {
@@ -405,17 +407,13 @@ input[type="checkbox"].visually-hidden {
   width: 650px;
 }
 
-.adv-head {
+.adv-title {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
   color: #000000;
   margin-top: 35px;
   margin-bottom: 31px;
-}
-
-.adv-head p {
-  margin: 0;
 }
 
 .adv-txt {
@@ -500,8 +498,12 @@ input[type="checkbox"].visually-hidden {
 
 .partners-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.partners-list li {
   height: 180px;
 }
 
@@ -521,7 +523,12 @@ input[type="checkbox"].visually-hidden {
   background-color: #eeeeee;
 }
 
+.partners-list a {
+  display: block;
+}
+
 .partners-list img {
+  display: block;
   opacity: 0.2;
 }
 
@@ -1171,7 +1178,8 @@ input[type="checkbox"].visually-hidden {
 .writeus {
   display: none;
   position: fixed;
-  top: 100px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 50%;
   min-width: 960px;
   min-height: 590px;
@@ -1205,20 +1213,20 @@ input[type="checkbox"].visually-hidden {
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translate(0, -50%);
   }
   10%,
   30%,
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translate(-10px, -50%);
   }
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translate(10px, -50%);
   }
 }
 
