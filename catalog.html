@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Нёрдс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-min.css">
 </head>
 <body>
   <header class="main-header">
     <nav class="container main-navigation">
-      <a class="header-logo" href="index.html"><img src="img/nerds-logo.svg" alt="Логотип Nerds" width="160" height="65"></a>
+      <a class="header-logo" href="index.html" aria-label="На главную"><img src="img/nerds-logo.svg" alt="Логотип Nerds" width="160" height="65"></a>
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
@@ -34,8 +34,8 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+                  <div class="toggle toggle-min"><span class="visually-hidden">Минимальная цена</span></div>
+                  <div class="toggle toggle-max"><span class="visually-hidden">Минимальная цена</span></div>
                 </div>
                 <div class="catalog-prices">
                   <label for="minprice-field">от<input type="text" name="minprice" id="minprice-field" value="0"></label>
@@ -103,8 +103,8 @@
               <li><a href="#" class="current-item">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По названию</a></li>
-              <li><a href="#" class="current-item"><img src="img/icon-down-dir.svg" alt="По убыванию" width="11" height="10" class="current-item"></a></li>
-              <li><a href="#"><img src="img/icon-up-dir.svg" alt="По возрастанию" width="11" height="10"></a></li>
+              <li><a href="#" class="current-item" aria-label="По убыванию"><img src="img/icon-down-dir.svg" alt="По убыванию" width="11" height="10" class="current-item"></a></li>
+              <li><a href="#" aria-label="По возрастанию"><img src="img/icon-up-dir.svg" alt="По возрастанию" width="11" height="10"></a></li>
             </ul>
           </section>
           <section class="catalog-section">
@@ -114,8 +114,10 @@
                 <img src="img/img-sedona.jpg" alt="Шаблон «Sedona»" width="360" height="576">
                 <div class="catalog-popup">
                   <a href="#"><h3>Sedona</h3></a>
-                  <p>Информационный сайт</p>
-                  <p>для туристов</p>
+                  <div class="catalog-popup-text">
+                    <p>Информационный сайт</p>
+                    <p>для туристов</p>
+                  </div>
                   <a class="price-button" href="#">9 900 руб.</a>
                 </div>
                 <img src="img/browser.svg" alt="Просмотр шаблона" width="360" height="40" class="browser-img">
@@ -124,8 +126,10 @@
                 <img src="img/img-pink.jpg" alt="Шаблон «Pink»" width="360" height="576">
                 <div class="catalog-popup">
                   <a href="#"><h3>Pink App</h3></a>
-                  <p>Продуктовый лендинг</p>
-                  <p>приложения для iOS и Android</p>
+                  <div class="catalog-popup-text">
+                    <p>Продуктовый лендинг</p>
+                    <p>приложения для iOS и Android</p>
+                  </div>
                   <a class="price-button" href="#">9 900 руб.</a>
                 </div>
                 <img src="img/browser.svg" alt="Просмотр шаблона" width="360" height="40" class="browser-img">
@@ -134,8 +138,10 @@
                 <img src="img/img-barbershop.jpg" alt="Шаблон «Бородинский»" width="360" height="576">
                 <div class="catalog-popup">
                   <a href="#"><h3>Barbershop</h3></a>
-                  <p>Сайт салона красоты.</p>
-                  <p>Для мужчин, да.</p>
+                  <div class="catalog-popup-text">
+                    <p>Сайт салона красоты.</p>
+                    <p>Для мужчин, да.</p>
+                  </div>
                   <a class="price-button" href="#">9 900 руб.</a>
                 </div>
                 <img src="img/browser.svg" alt="Просмотр шаблона" width="360" height="40" class="browser-img">
@@ -144,8 +150,10 @@
                 <img src="img/img-mishka.jpg" alt="Шаблон «Mishka»" width="360" height="576">
                 <div class="catalog-popup">
                   <a href="#"><h3>MISHKA</h3></a>
-                  <p>Интернет-магазин</p>
-                  <p>вязаных игрушек</p>
+                  <div class="catalog-popup-text">
+                    <p>Интернет-магазин</p>
+                    <p>вязаных игрушек</p>
+                  </div>
                   <a class="price-button" href="#">9 900 руб.</a>
                 </div>
                 <img src="img/browser.svg" alt="Просмотр шаблона" width="360" height="40" class="browser-img">
@@ -154,8 +162,10 @@
                 <img src="img/img-aplus.jpg" alt="Шаблон «A+»" width="360" height="576">
                 <div class="catalog-popup">
                   <a href="#"><h3>A PLUS</h3></a>
-                  <p>Лендинг курсов повышения</p>
-                  <p>квалификации</p>
+                  <div class="catalog-popup-text">
+                    <p>Лендинг курсов повышения</p>
+                    <p>квалификации</p>
+                  </div>
                   <a class="price-button" href="#">9 900 руб.</a>
                 </div>
                 <img src="img/browser.svg" alt="Просмотр шаблона" width="360" height="40" class="browser-img">
@@ -164,8 +174,10 @@
                 <img src="img/img-kvast.jpg" alt="Шаблон «Кваст»" width="360" height="576">
                 <div class="catalog-popup">
                   <a href="#"><h3>КВАСТ</h3></a>
-                  <p>Промо-сайт производителя</p>
-                  <p>крафтового кваса</p>
+                  <div class="catalog-popup-text">
+                    <p>Промо-сайт производителя</p>
+                    <p>крафтового кваса</p>
+                  </div>
                   <a class="price-button" href="#">9 900 руб.</a>
                 </div>
                 <img src="img/browser.svg" alt="Просмотр шаблона" width="360" height="40" class="browser-img">
@@ -209,9 +221,9 @@
   <footer class="main-footer">
     <div class="container footer-items">
       <ul class="social-list">
-        <li><a class="social-link" href="#"><img src="img/vk-icon.svg" alt="Вконтакте" width="26" height="15"></a></li>
-        <li><a class="social-link" href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="12" height="22"></a></li>
-        <li><a class="social-link" href="#"><img src="img/insta-icon.svg" alt="Инстаграм" width="21" height="21"></a></li>
+        <li><a class="social-link" href="#" aria-label="Вконтакте"><img src="img/vk-icon.svg" alt="Вконтакте" width="26" height="15"></a></li>
+        <li><a class="social-link" href="#" aria-label="Фейсбук"><img src="img/fb-icon.svg" alt="Фейсбук" width="12" height="22"></a></li>
+        <li><a class="social-link" href="#" aria-label="Инстаграм"><img src="img/insta-icon.svg" alt="Инстаграм" width="21" height="21"></a></li>
       </ul>
       <p class="invite">
         Давайте дружить, это выгодно!
