@@ -109,7 +109,7 @@ input[type="checkbox"].visually-hidden {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 438px;
-  margin-top: 12px;
+  margin-top: 15px;
 }
 
 .header-logo {
@@ -135,7 +135,7 @@ input[type="checkbox"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   width: 116px;
-  margin-top: 12px;
+  margin-top: 15px;
   margin-left: auto;
 }
 
@@ -182,7 +182,7 @@ input[type="checkbox"].visually-hidden {
   display: flex;
   flex-direction: column;
   width: 645px;
-  margin-top: 75px;
+  margin-top: 78px;
   margin-bottom: 80px;
   z-index: 1; /* Чтобы текст в случае переполнения лежал поверх картинки */
 }
@@ -318,7 +318,7 @@ input[type="checkbox"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 78px 60px 60px 0;
+  margin: 80px 60px 60px 0;
 }
 
 .propositions-items {
@@ -336,8 +336,8 @@ input[type="checkbox"].visually-hidden {
   font-size: 24px;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 26px;
-  margin-bottom: 22px;
+  margin-top: 28px;
+  margin-bottom: 18px;
 }
 
 .propositions-text {
@@ -354,7 +354,7 @@ input[type="checkbox"].visually-hidden {
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 3px;
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 .order-button1 {
@@ -560,7 +560,7 @@ input[type="checkbox"].visually-hidden {
 .footer-items {
   display: flex;
   align-items: center;
-  padding-top: 58px;
+  padding-top: 66px;
 }
 
 .social-list {
@@ -650,7 +650,7 @@ input[type="checkbox"].visually-hidden {
   text-align: center;
   line-height: 55px;
   background-color: #eeeeee;
-  padding: 75px 0 108px 0;
+  padding: 77px 0 108px 0;
   margin: 0;
 }
 
@@ -1029,14 +1029,15 @@ input[type="checkbox"].visually-hidden {
   padding: 0 10px;
   background-color: #eeeeee;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.25);
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 .catalog-popup h3 {
   font-size: 18px;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 35px;
+  margin-top: 27px;
+  margin-bottom: 0;
 }
 
 .catalog-popup h3:hover {
@@ -1050,8 +1051,8 @@ input[type="checkbox"].visually-hidden {
 .catalog-popup-text {
   max-height: 378px;
   overflow: auto;
-  margin-top: 18px;
-  margin-bottom: 28px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .catalog-popup-text p {
@@ -1069,7 +1070,7 @@ input[type="checkbox"].visually-hidden {
   color: #ffffff;
   background-color: #fb565a;
   border-radius: 3px;
-  margin-bottom: 43px;
+  margin-bottom: 44px;
 }
 
 .price-button:hover {
@@ -1159,12 +1160,13 @@ input[type="checkbox"].visually-hidden {
   font-style: normal;
   line-height: 18px;
   color: #283136;
+  padding-left: 2px;
 }
 
 .address {
   max-height: 90px;
   overflow: auto;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   padding-right: 10px;
 }
 
