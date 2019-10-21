@@ -927,7 +927,7 @@ input[type="checkbox"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 55px;
+  margin-bottom: 54px;
 }
 
 .sort-label {
