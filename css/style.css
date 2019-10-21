@@ -862,7 +862,8 @@ input[type="checkbox"].visually-hidden {
   height: 180px;
 }
 
-.features-controls label {
+.features-label {
+  position: relative;
   cursor: pointer;
 }
 
@@ -871,44 +872,46 @@ input[type="checkbox"].visually-hidden {
   color: #283136;
 }
 
-.features-custom-box {
+.features-label::before {
+  content: "";
+  display: block;
   position: absolute;
   width: 26px;
   height: 26px;
 }
 
-.features-input:not(:checked) + .features-label .features-custom-box {
+.features-input:not(:checked) + .features-label::before {
   background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 0.7;
 }
 
-.features-input:checked + .features-label .features-custom-box {
+.features-input:checked + .features-label::before {
   background: url("../img/checkbox-on.svg") no-repeat;
   opacity: 0.7;
 }
 
-.features-input:not(:checked):hover + .features-label .features-custom-box {
+.features-input:not(:checked):hover + .features-label::before {
   background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 1;
 }
 
-.features-input:checked:hover + .features-label .features-custom-box {
+.features-input:checked:hover + .features-label::before {
   background: url("../img/checkbox-on.svg") no-repeat;
   opacity: 1;
 }
 
-.features-input:not(:checked):focus + .features-label .features-custom-box {
+.features-input:not(:checked):focus + .features-label::before {
   background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 1;
 }
 
-.features-input:checked:focus + .features-label .features-custom-box {
+.features-input:checked:focus + .features-label::before {
   background: url("../img/checkbox-on.svg") no-repeat;
   opacity: 1;
 }
 
-.features-input:disabled + .features-label .features-custom-box,
-.features-input:disabled:hover + .features-label .features-custom-box {
+.features-input:disabled + .features-label::before,
+.features-input:disabled:hover + .features-label::before {
   opacity: 0.3;
   cursor: default;
 }
