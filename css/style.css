@@ -54,6 +54,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -115,6 +116,8 @@ input[type="checkbox"].visually-hidden {
 .header-logo {
   display: block;
   line-height: 0;
+  width: 160px;
+  height: 65px;
   margin-right: 202px;
 }
 
@@ -140,6 +143,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .cart-navigation img {
+  width: 15px;
+  height: 15px;
   margin-right: 26px;
 }
 
@@ -181,7 +186,7 @@ input[type="checkbox"].visually-hidden {
 .slides-text {
   display: flex;
   flex-direction: column;
-  width: 645px;
+  width: 535px;
   margin-top: 78px;
   margin-bottom: 80px;
   z-index: 1; /* Чтобы текст в случае переполнения лежал поверх картинки */
@@ -329,6 +334,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .propositions-items img {
+  height: 146px;
   order: -1;
 }
 
@@ -459,6 +465,10 @@ input[type="checkbox"].visually-hidden {
   width: 360px;
 }
 
+.methods img {
+  height: 208px;
+}
+
 .methods table {
   width: 100%;
   table-layout: fixed;
@@ -516,6 +526,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .partners-list li {
+  width: 260px;
   height: 180px;
 }
 
@@ -676,6 +687,11 @@ input[type="checkbox"].visually-hidden {
   margin-bottom: 33px;
 }
 
+.catalog-item-img {
+  width: 360px;
+  height: 576px;
+}
+
 .catalog-item:nth-last-child(-n+2) {
   margin-bottom: 0;
 }
@@ -684,7 +700,9 @@ input[type="checkbox"].visually-hidden {
   visibility: visible;
 }
 
-.catalog-item img:nth-of-type(2) {
+.catalog-item-svg {
+  display: block;
+  line-height: 0;
   order: -1;
 }
 
@@ -1012,8 +1030,8 @@ input[type="checkbox"].visually-hidden {
   opacity: 1;
 }
 
-.catalog-list img:hover  ~ .browser-img,
-.catalog-popup:hover  ~ .browser-img {
+.catalog-item-img:hover  ~ .catalog-item-svg .browser-img,
+.catalog-popup:hover  ~ .catalog-item-svg .browser-img {
   opacity: 1;
 }
 
