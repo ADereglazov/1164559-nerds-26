@@ -1357,7 +1357,9 @@ input[type="checkbox"].visually-hidden {
   min-height: 590px;
   max-width: 960px;
   max-height: 590px;
-  margin-top: -295px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   margin-left: -480px;
   overflow: auto;
   background-color: #ffffff;
